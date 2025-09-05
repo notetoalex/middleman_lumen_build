@@ -1,0 +1,202 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+    <!-- Use the title from a page's frontmatter if it has one -->
+    <title>Lumen IP Law</title>
+    <link href="/stylesheets/site.css" rel="stylesheet" />
+    <script src="/javascripts/site.js"></script>
+    <!-- For Font Awesome css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" />
+    <!-- For Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- For Fontshare -->
+  </head>
+  <body>
+    <div id="popup-consent" class="hidden">
+  <div class="container-custom">
+    <div class="inline">
+      <div class="consent-text">
+        <span>
+          This website uses cookies to collect anonymous user data to improve the websites functionality and performance. By using this website, you consent to the use of such cookies and agree to the terms of the <a onclick="openModal('modal-privacy')" href="#" class="privacy-link">Privacy Notice</a>.
+        </span>
+      </div>
+      <button onclick="acceptConsent()" id="accept-consent" class="button-w-icon-popup-consent">
+        <i class="fa-solid fa-square-xmark fa-2xl"></i>
+      </button>
+    </div>
+  </div>
+</div>
+<div class="navbar">
+  <div class="container-custom">
+    <div class="navbar-flexbox">
+      <a class="navbar-brand-link" href="/">
+        <img class="navbar-brand" src="/images/Lumen_RedIcon.svg" alt="">
+      </a>
+      <button id="open-sidebar-button" onclick="openSidebar()" aria-label="Open sidebar" aria-expanded="false" aria-controls="navbar"><i class="fa-solid fa-bars fa-xl"></i></button>
+      <nav id="sidebar-menu">
+        <ul>
+          <li class="justify-end"><button id="close-sidebar-button" onclick="closeSidebar()" aria-label="Close sidebar">
+              <i class="fa-solid fa-xmark fa-xl" style="color: #ffffff;"></i></button></li>
+          <li class="justify-left"><a class="button-nav" href="/">Home</a></li>
+          <li class="justify-left"><a class="button-nav" href="/services">Services</a></li>
+          <li class="justify-left"><a class="button-nav" href="/about">About</a></li>
+          <li class="justify-center"><button><a class="button-contact" href="/#form">Contact</a></button></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <!-- trickly placement of the overlay, must be done before the ending </div> of the section -->
+  <div id="overlay" onclick="closeSidebar()" aria-hidden="true">
+  </div>
+</div>
+
+<div class="page-banner" style="background-image: linear-gradient(to bottom right,
+rgba(65, 105, 225, .9),rgba(0, 0, 0, .7)), url('/images/pexels-ivaoo-691710.jpg');">
+  <div class="container-custom">
+    <div class="page">
+      <div class="page-text">
+        <h2>About the Attorney</h2>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="cred" class="about section-break" style="background-image: linear-gradient(to bottom right,rgba(0,0,0,0),rgba(0,0,0,.1)), url('/images/pexels-mitchel3uo-3694711.jpg');">
+  <div class="container-custom">
+    <div class="two-col-row boxes-two">
+      <div id="avatar"class="box box-l">
+        <img src="/images/mhs1.jpg" alt="">
+      </div>
+      <div class="box box-r">
+        <div class="name-title">
+          <h4>Alexander Lee, J.D., Ph.D.</h4>
+          <p>Patent Attorney</p>
+        </div>
+      </div>
+    </div>
+    <div class="three-col-row boxes-three">
+      <div class="box box-l box-red">
+        <div class="inline inline-red">
+          <i class="fa-solid fa-building-columns fa-xl"></i>
+          <div class="cred-heading">
+            <h5>Bar Admissions</h5>
+          </div>
+        </div>
+        <div class="cred-details cred-details-red">
+          <ul>
+            <li><strong>California</strong></li>
+            <li><strong>New York</strong></li>
+            <li><strong>Texas</strong></li>
+            <li><strong>United States Patent And Trademark Office</strong></li>
+          </ul>
+        </div>
+      </div>
+      <div class="box box-c box-gray">
+        <div class="inline inline-gray">
+          <i class="fa-solid fa-graduation-cap fa-xl"></i>
+          <div class="cred-heading">
+            <h5>Education</h5>
+          </div>
+        </div>
+        <div class="cred-details cred-details-gray">
+          <ul>
+            <li><strong>J.D. with Certificate in Transactions Practice</strong> (2016), Boston University School of Law, Boston, MA</li>
+            <li><strong>Ph.D. in Chemical Engineering</strong> (2006), University of Southern California, Los Angeles, CA</li>
+            <li><strong>M.S. in Electrical Engineering</strong> (2003), University of Southern California, Los Angeles, CA</li>
+            <li><strong>B.S. in Biochemistry</strong> (1997), University of California, Riverside, CA</li>
+          </ul>
+        </div>
+      </div>
+      <div class="box box-r box-orange">
+        <div class="inline inline-orange">
+          <i class="fa-solid fa-graduation-cap fa-xl"></i>
+          <div class="cred-heading">
+            <h5>Other Education</h5>
+          </div>
+        </div>
+        <div class="cred-details cred-details-orange">
+          <ul>
+            <li><strong>European Intellectual Property Law (Study Abroad)</strong> (2016), Harris Manchester College, University of Oxford, United Kingdom</li>
+            <li><strong>Full-Stack Web Development</strong> (2024), Le Wagon Coding Bootcamp, Tokyo, Japan</li>
+          </ul>
+        </div>
+        <br>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="about-text" class="about section-break" style="background-image: linear-gradient(to right,rgba(0,0,0,0.0),rgba(0,0,0,0.1)), url('/images/pexels-gdtography-277628-950241.jpg');">
+  <div class="container-custom">
+    <div class="two-col-row boxes-two">
+      <div class="box box-l">
+        <p>With a unique blend of technical expertise and legal acumen, Mr. Lee brings a comprehensive understanding of complex intellectual property matters to the practice. Prior to his legal career, he worked in the pharmaceutical and high tech industries in sSilicon Valley and Santa Barbara, where he gained firsthand experience with cutting-edge technology and innovation processes that drive today's most dynamic industries.
+        </p>
+      </div>
+      <div class="box box-r">
+      </div>
+    </div>
+    <div class="two-col-row boxes-two">
+      <div class="box box-l">
+      </div>
+      <div class="box box-r">
+        <p>This technical foundation led Mr. Lee to transition into the legal field, where he served as a science advisor at a prominent patent litigation firm. In this role, he developed deep insights into the intersection of technology and law, working closely with attorneys to analyze complex technical disputes and provide technical guidance on patent matters.
+        </p>
+        <p>While attending law school, Mr. Lee further expanded his experience by prosecuting patents, the valuable hands-on experience has given him a solid foundation in patent prosecution.
+        </p>
+      </div>
+    </div>
+    <div class="two-col-row boxes-two">
+      <div class="box box-l">
+        <p>Outside of his practice, Mr. Lee maintains a variety of interests that complement his professional efforts, such as playing classical guitar, web app development, and biking.</p>
+      </div>
+      <div class="box box-r">
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="ft-lite" class="footer section-break" style="background-color: #fffcf6;">
+  <div class="container-custom">
+    <div class="firm-info">
+      <img class="firm-logo" src="/images/Lumen_BlackLogo.svg" alt="">
+      <div class="firm-info-group">
+        <div class="icon-plus-text">
+          <i class="fa-solid fa-phone fa-lg"></i>
+          <p>+1 (805) 254-9555</p>
+        </div>
+        <div class="icon-plus-text">
+          <i class="fa-solid fa-envelope fa-lg"></i>
+          <p>info@lumeniplaw.com</p>
+        </div>
+        <div class="icon-plus-text">
+          <i class="fa-solid fa-location-dot fa-lg"></i>
+          <div class="address">
+            <p>351 Paseo Nuevo Floor 2</p>
+            <p>Santa Barbara, CA 93101</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="fine-print">
+    <div class="container-custom">
+      <div class="modal-footer bottom">
+        <p>Copyright 2025 Alexander Lee | All Rights Reserved</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  </body>
+  <!-- Your own JavaScript file -->
+  <!-- defer means to wait for the website to load -->
+  <script src="javascript/site.js" defer></script>
+</html>
