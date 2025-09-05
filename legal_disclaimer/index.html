@@ -18,7 +18,45 @@
     <!-- For Fontshare -->
   </head>
   <body>
-    <div class="page-banner">
+    <div id="popup-consent" class="hidden">
+  <div class="container-custom">
+    <div class="inline">
+      <div class="consent-text">
+        <span>
+          This website uses cookies to collect anonymous user data to improve the websites functionality and performance. By using this website, you consent to the use of such cookies and agree to the terms of the <a onclick="openModal('modal-privacy')" href="#" class="privacy-link">Privacy Notice</a>.
+        </span>
+      </div>
+      <button onclick="acceptConsent()" id="accept-consent" class="button-w-icon-popup-consent">
+        <i class="fa-solid fa-square-xmark fa-2xl"></i>
+      </button>
+    </div>
+  </div>
+</div>
+<div class="navbar">
+  <div class="container-custom">
+    <div class="navbar-flexbox">
+      <a class="navbar-brand-link" href="/">
+        <img class="navbar-brand" src="/images/Lumen_RedIcon.svg" alt="">
+      </a>
+      <button id="open-sidebar-button" onclick="openSidebar()" aria-label="Open sidebar" aria-expanded="false" aria-controls="navbar"><i class="fa-solid fa-bars fa-xl"></i></button>
+      <nav id="sidebar-menu">
+        <ul>
+          <li class="justify-end"><button id="close-sidebar-button" onclick="closeSidebar()" aria-label="Close sidebar">
+              <i class="fa-solid fa-xmark fa-xl" style="color: #ffffff;"></i></button></li>
+          <li class="justify-left"><a class="button-nav" href="/">Home</a></li>
+          <li class="justify-left"><a class="button-nav" href="/services">Services</a></li>
+          <li class="justify-left"><a class="button-nav" href="/about">About</a></li>
+          <li class="justify-center"><button><a class="button-contact" href="/#form">Contact</a></button></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <!-- trickly placement of the overlay, must be done before the ending </div> of the section -->
+  <div id="overlay" onclick="closeSidebar()" aria-hidden="true">
+  </div>
+</div>
+
+<div class="page-banner">
   <div class="container-custom">
     <div class="page">
       <div class="page-text">
@@ -65,6 +103,7 @@
       <p>If you wish to discuss a potential legal matter, please contact my office directly by telephone to schedule a consultation. Email communications through this website should not be considered secure.</p>
     </div>
   </div>
+
 
   </body>
   <!-- Your own JavaScript file -->

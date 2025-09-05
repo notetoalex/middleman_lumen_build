@@ -7,8 +7,8 @@
           content="width=device-width, initial-scale=1, shrink-to-fit=yes">
     <!-- Use the title from a page's frontmatter if it has one -->
     <title>Lumen IP Law</title>
-    <link href="./stylesheets/site.css" rel="stylesheet" />
-    <script src="./javascripts/site.js"></script>
+    <link href="/middleman_lumen_build/stylesheets/site.css" rel="stylesheet" />
+    <script src="/middleman_lumen_build/javascripts/site.js"></script>
     <!-- For Font Awesome css -->
     <link rel="stylesheet" href="https:/cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" />
     <!-- For Google Fonts -->
@@ -35,18 +35,18 @@
 <div class="navbar">
   <div class="container-custom">
     <div class="navbar-flexbox">
-      <a class="navbar-brand-link" href="./">
-        <img class="navbar-brand" src="/middleman_lumen_build/images/Lumen_RedIcon.svg" alt="">
+      <a class="navbar-brand-link" href="/middleman_lumen_build/">
+        <img class="navbar-brand" src="/middleman_lumen_build/middleman_lumen_build/images/Lumen_RedIcon.svg" alt="">
       </a>
       <button id="open-sidebar-button" onclick="openSidebar()" aria-label="Open sidebar" aria-expanded="false" aria-controls="navbar"><i class="fa-solid fa-bars fa-xl"></i></button>
       <nav id="sidebar-menu">
         <ul>
           <li class="justify-end"><button id="close-sidebar-button" onclick="closeSidebar()" aria-label="Close sidebar">
               <i class="fa-solid fa-xmark fa-xl" style="color: #ffffff;"></i></button></li>
-          <li class="justify-left"><a class="button-nav" href="./">Home</a></li>
-          <li class="justify-left"><a class="button-nav" href="./services">Services</a></li>
-          <li class="justify-left"><a class="button-nav" href="./about">About</a></li>
-          <li class="justify-center"><button><a class="button-contact" href="./#form">Contact</a></button></li>
+          <li class="justify-left"><a class="button-nav" href="/middleman_lumen_build/">Home</a></li>
+          <li class="justify-left"><a class="button-nav" href="/middleman_lumen_build/services">Services</a></li>
+          <li class="justify-left"><a class="button-nav" href="/middleman_lumen_build/about">About</a></li>
+          <li class="justify-center"><button><a class="button-contact" href="/middleman_lumen_build/#form">Contact</a></button></li>
         </ul>
       </nav>
     </div>
@@ -184,7 +184,7 @@ rgba(65, 105, 225, .9),rgba(0, 0, 0, .7)), url('/middleman_lumen_build/images/pe
           <p>+1 (805) 254-9555</p>
         </div>
         <div class="icon-plus-text">
-  <i class="fa-solid fa-envelope fa-lg"></i>
+          <i class="fa-solid fa-envelope fa-lg"></i>
           <p>info@lumeniplaw.com</p>
         </div>
         <div class="icon-plus-text">
@@ -210,5 +210,5 @@ rgba(65, 105, 225, .9),rgba(0, 0, 0, .7)), url('/middleman_lumen_build/images/pe
   </body>
   <!-- Your own JavaScript file -->
   <!-- defer means to wait for the website to load -->
-  <script src="/middleman_lumen_build/javascript/site.js" defer></script>
+  <script src="./javascript/site.js" defer></script>
 </html>
