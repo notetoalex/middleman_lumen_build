@@ -1,0 +1,20 @@
+{
+	"folders": [
+		{
+			"path": "../.."
+		},
+		{
+			"path": "../../../middleman_lumen_old"
+		},
+		{
+			"path": "../../../middleman_default_modal-bottom"
+		},
+		{
+			"path": "../../../middleman_default_modal"
+		},
+		{
+			"path": "../../.."
+		}
+	],
+  "settings": {}
+}
