@@ -76,6 +76,19 @@ caption {
     max-width: 1140px;
     /* For extra large screens */ } }
 
+.container-footer {
+  max-width: 540px;
+  /* For small screens */
+  margin: auto;
+  padding: 5px 5px; }
+  @media (max-width: 720px) {
+    .container-footer .container-footer {
+      width: 400px;
+      /* For medium screens */ } }
+  @media (min-width: 768px) {
+    .container-footer .container-footer {
+      width: 720px;
+      /* For medium screens */ } }
 .inline-top {
   vertical-align: top;
   display: flex;
@@ -113,8 +126,7 @@ button {
   display: flex;
   align-items: center;
   gap: 1ch;
-  border: none;
-  font-size: small; }
+  border: none; }
 
 .button-w-icon:hover {
   -webkit-transition: 0.5s;
@@ -124,7 +136,6 @@ button {
           box-shadow: 0 0 20px #eee; }
 
 .button-nav {
-  font-size: small;
   color: black;
   background-color: none;
   text-decoration: none;
@@ -141,7 +152,6 @@ button {
   color: white;
   outline: none;
   border: none;
-  font-size: small;
   padding: 4px 12px;
   text-align: center;
   border-radius: 4px;
@@ -161,7 +171,6 @@ button[type="submit"] {
   color: white;
   outline: none;
   border: none;
-  font-size: small;
   justify-content: center; }
 
 button[type="submit"]:hover {
@@ -189,8 +198,7 @@ button[type="submit"]:hover {
   display: flex;
   align-items: center;
   gap: 1ch;
-  border: none;
-  font-size: small; }
+  border: none; }
 
 .button-w-icon-modal-close:hover, .button-w-icon-popup-close:hover {
   background: darkgray; }
@@ -221,6 +229,11 @@ button[type="submit"]:hover {
   padding: 0px 0px;
   flex-wrap: wrap;
   flex-basis: 50%; }
+
+.contact-info .firm-logo {
+  margin: auto;
+  align-items: center;
+  width: 50%; }
 
 .navbar-brand {
   height: 36px;
@@ -276,7 +289,7 @@ nav a.accent-link {
     padding: 0;
     margin: 0; }
   .button-nav {
-    padding: 0; }
+    padding-left: 2ch; }
   #sidebar-menu {
     -webkit-transform: translateX(200%);
             transform: translateX(200%);
@@ -985,6 +998,28 @@ body.modal-open {
 #ft {
   color: black; }
 
+#ft .box-l {
+  justify-items: center; }
+
+.contact-info {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+  padding: 0;
+  justify-items: center;
+  justify-content: center;
+  width: auto;
+  align-items: center;
+  margin: auto; }
+  @media (max-width: 720px) {
+    .contact-info {
+      -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr; } }
+.icon-plus-text {
+  padding: 8px; }
+
 .fine-print {
   justify-items: center; }
 
@@ -994,36 +1029,15 @@ body.modal-open {
   align-items: center;
   justify-content: space-evenly; }
 
-.firm-info {
+#ft .firm-logo-area {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
 
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  margin: auto;
-
-   @media (max-width: 540px) {
-    grid-template-columns: 1fr;
-        padding-top: 16px;
-        justify-items: center;
-justify-content: center;
-width: max-content;
-align-items: center;
-  }
-
-
-}
-
-.firm-logo {
-  width: 60%;
+#ft .firm-logo {
+  width: 75%;
   height: auto;
-  align-items: end;
-  justify-items: center;
-  padding-top: 16px;
-  padding-bottom: 16px;
-  margin: auto;
-
-}
-
-
+  justify-items: center; }
 
 .fine-print {
   justify-items: center;
@@ -1034,10 +1048,7 @@ align-items: center;
   font-size: smaller;
   color: black; }
 
-.icon-plus-text {
-  padding: 16px; }
-
-#ft .l-side {
+#contact .l-side {
   background-color: #595f72;
   padding: 8px;
   color: white;
