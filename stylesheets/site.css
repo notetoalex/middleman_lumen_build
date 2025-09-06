@@ -681,6 +681,9 @@ Make all .box-card columns equal width and height
   width: 2.7rem;
   height: auto; }
 
+.image-two-col {
+  color: #4169e1; }
+
 #am .mhs2 {
   display: flex;
   justify-content: center;
@@ -982,10 +985,14 @@ body.modal-open {
 #ft {
   color: black; }
 
-.bottom {
-  justify-items: center;
-  font-size: smaller;
-  justify-content: center; }
+.fine-print {
+  justify-items: center; }
+
+.footer-bottom span {
+  display: flex;
+  gap: 2ch;
+  align-items: center;
+  justify-content: space-evenly; }
 
 .firm-info {
   display: -ms-grid;
