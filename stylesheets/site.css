@@ -995,36 +995,35 @@ body.modal-open {
   justify-content: space-evenly; }
 
 .firm-info {
-  display: -ms-grid;
+
   display: grid;
-  -ms-grid-columns: 1fr 1fr;
   grid-template-columns: 1fr 1fr;
-  margin: auto; }
-  @media (max-width: 540px) {
-    .firm-info {
-      -ms-grid-columns: 1fr;
-      grid-template-columns: 1fr;
-      padding: 16px;
-      justify-items: center;
-      justify-content: center;
-      width: -webkit-max-content;
-      width: -moz-max-content;
-      width: max-content;
-      align-items: center; } }
-  @media (min-width: 540px) {
-    .firm-info {
-      -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
-      padding: 0;
-      justify-items: center;
-      justify-content: center;
-      width: -webkit-max-content;
-      width: -moz-max-content;
-      width: max-content;
-      align-items: center; } }
+  margin: auto;
+
+   @media (max-width: 540px) {
+    grid-template-columns: 1fr;
+        padding-top: 16px;
+        justify-items: center;
+justify-content: center;
+width: max-content;
+align-items: center;
+  }
+
+
+}
+
 .firm-logo {
-  width: 65%;
-  height: auto; }
+  width: 60%;
+  height: auto;
+  align-items: end;
+  justify-items: center;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  margin: auto;
+
+}
+
+
 
 .fine-print {
   justify-items: center;
