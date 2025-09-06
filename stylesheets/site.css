@@ -207,14 +207,12 @@ button[type="submit"]:hover {
   position: fixed;
   top: 0;
   width: 100%;
+  min-height: 46px;
   -webkit-box-shadow: 0 0 16px rgba(0, 0, 0, 0.5);
           box-shadow: 0 0 16px rgba(0, 0, 0, 0.5);
   z-index: 10; }
 
 .navbar-flexbox {
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -252,14 +250,16 @@ nav a.accent-link {
   display: none;
   background: none;
   border: none;
-  padding: 1em;
+  padding: 0;
+  align-items: center;
   cursor: pointer; }
 
 #close-sidebar-button {
   display: none;
   background: none;
   border: none;
-  padding: 1em;
+  padding: 0;
+  align-items: center;
   cursor: pointer; }
 
 #overlay {
@@ -272,6 +272,11 @@ nav a.accent-link {
 @media screen and (max-width: 540px) {
   #open-sidebar-button, #close-sidebar-button {
     display: block; }
+  .navbar, .navbar-flexbox, nav ul, nav li {
+    padding: 0;
+    margin: 0; }
+  .button-nav {
+    padding: 0; }
   #sidebar-menu {
     -webkit-transform: translateX(200%);
             transform: translateX(200%);
@@ -676,6 +681,24 @@ Make all .box-card columns equal width and height
   width: 2.7rem;
   height: auto; }
 
+#am .mhs2 {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  border-radius: 16px;
+  -webkit-box-shadow: 0 0 32px rgba(0, 0, 0, 0.9);
+          box-shadow: 0 0 32px rgba(0, 0, 0, 0.9); }
+
+#avatar {
+  display: flex;
+  justify-content: center; }
+
+#cred .mhs1 {
+  size: 50%;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 0 32px rgba(0, 0, 0, 0.9);
+          box-shadow: 0 0 32px rgba(0, 0, 0, 0.9); }
+
 .modal {
   /* modals are hidden by default */
   display: none;
@@ -780,11 +803,10 @@ body.modal-open {
   background-size: cover;
   background-repeat: no-repeat;
   background-blend-mode: multiply;
-  color: white; }
+  margin-top: 46px;
+  /* 46px without borders makes the banner start where the navbar ends */ }
 
 .page {
-  margin-top: 46px;
-  /* 46px without borders makes the banner start where the navbar ends */
   padding-top: 16px;
   padding-bottom: 16px;
   border-color: whitesmoke; }
@@ -965,31 +987,36 @@ body.modal-open {
   font-size: smaller;
   justify-content: center; }
 
-#ft .r-side {
-  justify-items: center; }
-
 .firm-info {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
   grid-template-columns: 1fr 1fr;
-  justify-items: center;
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
-  align-items: center; }
-  @media (max-width: 768px) {
+  margin: auto; }
+  @media (max-width: 540px) {
     .firm-info {
       -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
-      padding: 0; } }
-  @media (min-width: 1140px) {
+      padding: 16px;
+      justify-items: center;
+      justify-content: center;
+      width: -webkit-max-content;
+      width: -moz-max-content;
+      width: max-content;
+      align-items: center; } }
+  @media (min-width: 540px) {
     .firm-info {
       -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
-      padding: 0; } }
+      padding: 0;
+      justify-items: center;
+      justify-content: center;
+      width: -webkit-max-content;
+      width: -moz-max-content;
+      width: max-content;
+      align-items: center; } }
 .firm-logo {
-  width: 66%;
+  width: 65%;
   height: auto; }
 
 .fine-print {
@@ -1003,10 +1030,6 @@ body.modal-open {
 
 .icon-plus-text {
   padding: 16px; }
-
-.r-side {
-  padding-top: 16px;
-  padding-bottom: 16px; }
 
 #ft .l-side {
   background-color: #595f72;
