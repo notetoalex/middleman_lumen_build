@@ -7,46 +7,49 @@
           content="width=device-width, initial-scale=1, shrink-to-fit=yes">
     <!-- Use the title from a page's frontmatter if it has one -->
     <title>Lumen IP Law</title>
-    <link href="/middleman_lumen_build/stylesheets/site.css" rel="stylesheet" />
-    <script src="/middleman_lumen_build/javascripts/site.js"></script>
+    <link href="/stylesheets/site.css" rel="stylesheet" />
+    <script src="/javascripts/site.js"></script>
     <!-- For Font Awesome css -->
-    <link rel="stylesheet" href="https:/cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" />
     <!-- For Google Fonts -->
-    <link rel="preconnect" href="https:/fonts.googleapis.com">
-    <link rel="preconnect" href="https:/fonts.gstatic.com" crossorigin>
-    <link href="https:/fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <!-- For Fontshare -->
   </head>
   <body>
     <div id="popup-consent" class="hidden">
   <div class="container-custom">
-    <div class="inline">
-      <div class="consent-text">
-        <span>
-          This website uses cookies to collect anonymous user data to improve the websites functionality and performance. By using this website, you consent to the use of such cookies and agree to the terms of the <a onclick="openModal('modal-privacy')" href="#" class="privacy-link">Privacy Notice</a>.
-        </span>
-      </div>
-      <button onclick="acceptConsent()" id="accept-consent" class="button-w-icon-popup-consent">
-        <i class="fa-solid fa-square-xmark fa-2xl"></i>Close
-      </button>
+    <div class="">
+      <button onclick="acceptConsent()" id="accept-consent" class="button-w-icon-popup-close">
+        <img class="icon-lg" src="images/xmark-solid-full-black.svg" alt="">
+        Close</button>
+    </button>
+    <div class="consent-text">
+      <span>
+        This website uses cookies to collect anonymous user data to improve the websites functionality and performance. By using this website, you consent to the use of such cookies and agree to the terms of the <a onclick="openModal('modal-privacy')" href="#" class="privacy-link">Privacy Notice</a>.
+      </span>
     </div>
   </div>
+</div>
 </div>
 <div class="navbar">
   <div class="container-custom">
     <div class="navbar-flexbox">
-      <a class="navbar-brand-link" href="/middleman_lumen_build/">
-        <img class="navbar-brand" src="/middleman_lumen_build/images/Lumen_RedIcon.svg" alt="">
+      <a class="navbar-brand-link" href="/">
+        <img class="navbar-brand" src="/images/Lumen_RedIcon.svg" alt="">
       </a>
-      <button id="open-sidebar-button" onclick="openSidebar()" aria-label="Open sidebar" aria-expanded="false" aria-controls="navbar"><i class="fa-solid fa-bars fa-xl"></i></button>
+      <button id="open-sidebar-button" onclick="openSidebar()" aria-label="Open sidebar" aria-expanded="false" aria-controls="navbar"><img class="icon-xl" src="/images/bars-solid-full.svg" alt="">
+      </button>
       <nav id="sidebar-menu">
         <ul>
           <li class="justify-end"><button id="close-sidebar-button" onclick="closeSidebar()" aria-label="Close sidebar">
-              <i class="fa-solid fa-xmark fa-xl" style="color: #ffffff;"></i></button></li>
-          <li class="justify-left"><a class="button-nav" href="/middleman_lumen_build/">Home</a></li>
-          <li class="justify-left"><a class="button-nav" href="/middleman_lumen_build/services">Services</a></li>
-          <li class="justify-left"><a class="button-nav" href="/middleman_lumen_build/about">About</a></li>
-          <li class="justify-center"><button><a class="button-contact" href="/middleman_lumen_build/#form">Contact</a></button></li>
+              <img class="icon-xl" src="/images/xmark-solid-full.svg" alt="">
+            </button></li>
+          <li class="justify-left"><a class="button-nav" href="/">Home</a></li>
+          <li class="justify-left"><a class="button-nav" href="/services">Services</a></li>
+          <li class="justify-left"><a class="button-nav" href="/about">About</a></li>
+          <li class="justify-center"><button><a class="button-contact" href="/#form">Contact</a></button></li>
         </ul>
       </nav>
     </div>
@@ -57,7 +60,7 @@
 </div>
 
 <div class="page-banner" style="background-image: linear-gradient(to bottom right,
-rgba(65, 105, 225, .9),rgba(0, 0, 0, .7)), url('/middleman_lumen_build/images/pexels-ivaoo-691710.jpg');">
+rgba(65, 105, 225, .9),rgba(0, 0, 0, .7)), url('/images/pexels-ivaoo-691710.jpg');">
   <div class="container-custom">
     <div class="page">
       <div class="page-text">
@@ -67,11 +70,11 @@ rgba(65, 105, 225, .9),rgba(0, 0, 0, .7)), url('/middleman_lumen_build/images/pe
   </div>
 </div>
 
-<div id="cred" class="about section-break" style="background-image: linear-gradient(to bottom right,rgba(0,0,0,0),rgba(0,0,0,.1)), url('/middleman_lumen_build/images/pexels-mitchel3uo-3694711.jpg');">
+<div id="cred" class="about section-break" style="background-image: linear-gradient(to bottom right,rgba(0,0,0,0),rgba(0,0,0,.1)), url('/images/pexels-mitchel3uo-3694711.jpg');">
   <div class="container-custom">
     <div class="two-col-row boxes-two">
       <div id="avatar"class="box box-l">
-        <img src="/middleman_lumen_build/images/mhs1.jpg" alt="">
+        <img class="mhs1" src="/images/mhs1.jpg" alt="">
       </div>
       <div class="box box-r">
         <div class="name-title">
@@ -83,7 +86,7 @@ rgba(65, 105, 225, .9),rgba(0, 0, 0, .7)), url('/middleman_lumen_build/images/pe
     <div class="three-col-row boxes-three">
       <div class="box box-l box-red">
         <div class="inline inline-red">
-          <i class="fa-solid fa-building-columns fa-xl"></i>
+          <img class="icon-xl" src="/images/building-columns-solid-full.svg" alt="">
           <div class="cred-heading">
             <h5>Bar Admissions</h5>
           </div>
@@ -99,7 +102,7 @@ rgba(65, 105, 225, .9),rgba(0, 0, 0, .7)), url('/middleman_lumen_build/images/pe
       </div>
       <div class="box box-c box-gray">
         <div class="inline inline-gray">
-          <i class="fa-solid fa-graduation-cap fa-xl"></i>
+          <img class="icon-xl" src="/images/graduation-cap-solid-full.svg" alt="">
           <div class="cred-heading">
             <h5>Education</h5>
           </div>
@@ -115,12 +118,12 @@ rgba(65, 105, 225, .9),rgba(0, 0, 0, .7)), url('/middleman_lumen_build/images/pe
       </div>
       <div class="box box-r box-orange">
         <div class="inline inline-orange">
-          <i class="fa-solid fa-graduation-cap fa-xl"></i>
+          <img class="icon-xl" src="/images/graduation-cap-solid-full.svg" alt="">
           <div class="cred-heading">
             <h5>Other Education</h5>
           </div>
         </div>
-        <div class="cred-details cred-details-orange">
+        <div class="cicon red-details cred-details-orange">
           <ul>
             <li><strong>European Intellectual Property Law (Study Abroad)</strong> (2016), Harris Manchester College, University of Oxford, United Kingdom</li>
             <li><strong>Full-Stack Web Development</strong> (2024), Le Wagon Coding Bootcamp, Tokyo, Japan</li>
@@ -132,7 +135,7 @@ rgba(65, 105, 225, .9),rgba(0, 0, 0, .7)), url('/middleman_lumen_build/images/pe
   </div>
 </div>
 
-<div id="about-text" class="about section-break" style="background-image: linear-gradient(to right,rgba(0,0,0,0.0),rgba(0,0,0,0.1)), url('/middleman_lumen_build/images/pexels-gdtography-277628-950241.jpg');">
+<div id="about-text" class="about section-break" style="background-image: linear-gradient(to right,rgba(0,0,0,0.0),rgba(0,0,0,0.1)), url('/images/pexels-gdtography-277628-950241.jpg');">
   <div class="container-custom">
     <div class="two-col-row boxes-two">
       <div class="box box-l">
@@ -165,7 +168,7 @@ rgba(65, 105, 225, .9),rgba(0, 0, 0, .7)), url('/middleman_lumen_build/images/pe
 <div id="ft-lite" class="footer section-break" style="background-color: #fffcf6;">
   <div class="container-custom">
     <div class="firm-info">
-      <img class="firm-logo" src="/middleman_lumen_build/images/Lumen_BlackLogo.svg" alt="">
+      <img class="firm-logo" src="/images/Lumen_BlackLogo.svg" alt="">
       <div class="firm-info-group">
         <div class="icon-plus-text">
           <i class="fa-solid fa-phone fa-lg"></i>

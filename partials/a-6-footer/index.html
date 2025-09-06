@@ -118,7 +118,8 @@
                     placeholder="Type here (200-character limit)" required></textarea>
                   <!-- Clear button -- SHOULD REMOVE BEFORE PUBLISHING -->
                   <div class="counter-display">
-                    <button id="reset-form" class="button-w-icon" type="reset" value="Reset Form"><i class="fa-solid fa-trash-can"></i>Clear Form</button>
+                    <button id="reset-form" class="button-w-icon" type="reset" value="Reset Form">
+                      <img class="icon-normal" src="/images/trash-can-solid-full.svg" alt="">Clear Form</button>
                     <div><span id="char-counter">200</span> characters remaining</div>
                   </div>
                 </div>
@@ -133,7 +134,8 @@
                 </div>
               </div>
               <div class="form-group-wide">
-                <button class="button-w-icon" type="submit"><i class="fa-solid fa-paper-plane"></i>Send Message</button>
+                <button class="button-w-icon" type="submit">
+                  <img class="icon-normal" src="/images/paper-plane-solid-full.svg" alt="">Send Message</button>
               </div>
             </div>
           </form>
@@ -145,15 +147,15 @@
         <img class="firm-logo" src="/images/Lumen_BlackLogo.svg" alt="">
         <div class="firm-info-group">
           <div class="icon-plus-text">
-            <i class="fa-solid fa-phone fa-lg"></i>
+            <img class="icon-lg" src="/images/phone-solid-full.svg" alt="">
             <p>+1 (805) 254-9555</p>
           </div>
           <div class="icon-plus-text">
-            <i class="fa-solid fa-envelope fa-lg"></i>
+            <img class="icon-lg" src="/images/envelope-solid-full.svg" alt="">
             <p>info@lumeniplaw.com</p>
           </div>
           <div class="icon-plus-text">
-            <i class="fa-solid fa-location-dot fa-lg"></i>
+            <img class="icon-lg" src="/images/location-dot-solid-full.svg" alt="">
             <div class="address">
               <p>351 Paseo Nuevo Floor 2</p>
               <p>Santa Barbara, CA 93101</p>
@@ -164,161 +166,165 @@
     </div>
     <div class="fine-print">
       <div class="container-custom">
-        <div class="modal-footer bottom">
-          <div class="inline">
-            <button onclick="openModal('modal-legal')" class="button-nav">Legal Disclaimer</button><button onclick="openModal('modal-privacy')" class="button-nav">Privacy Notice</button></div>
+        <div class="footer-bottom">
+          <span><button onclick="openModal('modal-legal')" class="button-nav">Legal Disclaimer</button><button onclick="openModal('modal-privacy')" class="button-nav">Privacy Notice</button></span>
           <p>Copyright 2025 Alexander Lee | All Rights Reserved</p>
-          <div id="modal-legal" class="modal hidden">
-            <div class="modal-title">
-              <h3>Legal Disclaimer</h3>
-              <button onclick="closeModal()" class="button-w-icon-modal-close"><i class="fa-solid fa-xmark fa-lg"></i>Close</button>
-            </div>
-            <div class="modal-body">
-              <h4>Attorney Advertising Notice</h4>
-              <p>This website constitutes attorney advertising under the rules of professional conduct in various jurisdictions. Prior results do not guarantee a similar outcome in future cases.</p>
-              <h4>No Attorney-Client Relationship</h4>
-              <p><strong>IMPORTANT: </strong>The transmission of information via this website does not create an attorney-client relationship between you and Alexander Lee or Lumen Intellectual Property Law. An attorney-client relationship is established only through a signed retainer agreement after a consultation and mutual agreement to representation.</p>
-              <p>Do not send confidential or time-sensitive information through this website's contact forms or email. Information transmitted through this website may not be privileged or confidential.</p>
-              <h4>Not Legal Advice</h4>
-              <p>The information provided on this website is for general informational purposes only and should not be construed as legal advice. The law varies by jurisdiction and individual circumstances. You should not act or refrain from acting based on information contained on this website without seeking professional legal counsel appropriate to your particular situation.</p>
-              <h4>No Guarantee of Results</h4>
-              <p><strong>Prior results do not guarantee a similar outcome. </strong>Past results obtained by Lumen Intellectual Property Law do not guarantee, warrant, or predict the outcome of your legal matter. Every case is unique and must be evaluated on its individual facts and circumstances. Case results depend upon a variety of factors unique to each case and matter. Attorney advertising materials may contain testimonials or case results that do not reflect the experiences of all clients, and such results should not be considered typical.</p>
-              <h4>Jurisdictional Limitations
-              </h4>
-              <p>Alexander Lee is licensed to practice law only in the jurisdictions where admitted. This website is not intended to solicit clients outside the geographical areas where Alexander Lee is licensed to practice law. If you are located outside these jurisdictions, please consult with a local attorney.</p>
-              <h4>Third-Party Links and Content</h4>
-              <p>This website may contain links to third-party websites or resources. We do not endorse and are not responsible for the content, accuracy, or opinions expressed on such websites. Links to third-party sites are provided for convenience only.</p>
-              <h4>Website Accuracy and Updates
-              </h4>
-              <p>While we strive to keep the information on this website current and accurate, laws change frequently, and we make no representations or warranties regarding the completeness, accuracy, or timeliness of the content. This website may not reflect the most current legal developments.</p>
-              <h4>Professional Rules Compliance</h4>
-              <p>This website and Lumen Intellectual Property Law are governed by the applicable Rules of Professional Conduct, including but not limited to:</p>
-              <ul>
-                <li>American Bar Association Model Rules of Professional Conduct</li>
-                <li>California Rules of Professional Conduct (if applicable)</li>
-                <li>Texas Disciplinary Rules of Professional Conduct (if applicable)</li>
-                <li>New York Rules of Professional Conduct (if applicable)</li>
-                <li>Local court rules and jurisdictional requirements</li>
-              </ul>
-              <h4>Specialization and Certification Disclaimers</h4>
-              <p>Unless specifically certified by the appropriate board of legal specialization in the relevant jurisdiction, no representation is made that Alexander Lee is certified as a specialist in any particular area of law. Any reference to experience or focus in particular practice areas should not be construed as certification or specialization.</p>
-              <h4>Disclaimer Prominence</h4>
-              <p>This disclaimer is provided with equal prominence to all content on this website to ensure viewers' expectations are not misled regarding legal services or potential outcomes.</p>
-              <p><strong>DO NOT </strong>include confidential, privileged, or time-sensitive information in any communication through this website. Use of this website does not preserve any attorney-client privilege or work-product protection.</p>
-              <h4>Confidentiality Warning</h4>
-              <p>If you wish to discuss a potential legal matter, please contact my office directly by telephone to schedule a consultation. Email communications through this website should not be considered secure.</p>
-            </div>
+        </div>
+        <div id="modal-legal" class="modal hidden">
+          <div class="modal-title">
+            <h3>Legal Disclaimer</h3>
+            <button onclick="closeModal()" class="button-w-icon-modal-close">
+              <img class="icon-lg" src="images/xmark-solid-full-black.svg" alt="">
+              Close</button>
           </div>
-          <div id="modal-privacy" class="modal hidden">
-            <div class="modal-title">
-              <h3>Privacy Notice</h3>
-              <button onclick="closeModal()" class="button-w-icon-modal-close"><i class="fa-solid fa-xmark fa-lg"></i>Close</button>
-            </div>
-            <div class="modal-body">
-              <p>This website collects anonymous user data. By using this website, you acknowledge that you have read this Privacy Notice and agree to its terms. If you do not agree with this Privacy Notice, please do not use this website.</p>
-              <h4>Our Commitment to Your Privacy</h4>
-              <p>We are committed to protecting the confidentiality and privacy of our clients and website visitors. This Privacy Notice explains how we collect, use, and protect information when you visit our website or engage our legal services.</p>
-              <h4>Attorney-Client Privilege and Confidentiality</h4>
-              <p>All communications between you and our firm regarding legal representation are protected by attorney-client privilege and the ethical duty of confidentiality. We maintain the highest standards of confidentiality in accordance with the Rules of Professional Conduct in California, Texas, New York, and the American Bar Association Model Rules.</p>
-              <p><strong>Important: </strong>Do not send confidential or sensitive information through unsecured email or website contact forms until an attorney-client relationship has been formally established.</p>
-              <h4>Information We Collect</h4>
-              <h5>Legal Services</h5>
-              <p>When you engage our services, we collect information necessary to provide legal representation, including:</p>
-              <ul>
-                <li>Personal and contact information</li>
-                <li>Case-related documents and communications</li>
-                <li>Financial information for billing purposes</li>
-                <li>Other information relevant to your legal matter</li>
-              </ul>
-              <h5>Website Analytics</h5>
-              <p>Our website uses Google Analytics to understand how visitors interact with our site. This service may collect:</p>
-              <ul>
-                <li>IP addresses (anonymized)</li>
-                <li>Browser and device information</li>
-                <li>Pages visited and time spent on sit</li>
-                <li>Referring websites</li>
-                <li>General geographic location (city/state level)</li>
-              </ul>
-              <p><strong>No confidential client information or attorney-client privileged communications are transmitted to Google Analytics.</strong></p>
-              <h4>How We Use Information</h4>
-              <h5>Legal Services Information</h5>
-              <p>Information collected in connection with legal representation is used solely to:</p>
-              <ul>
-                <li>Provide competent legal services</li>
-                <li>Communicate with you about your legal matter</li>
-                <li>Process billing and payments</li>
-                <li>Comply with legal and ethical obligations</li>
-              </ul>
-              <h5>Website Analytics Information</h5>
-              <p>Analytics data helps us:</p>
-              <ul>
-                <li>Improve website functionality and user experien</li>
-                <li>Understand which content is most helpful to visitor</li>
-                <li>Make informed decisions about website improvements</li>
-              </ul>
-              <h4>Information Sharing and Disclosure</h4>
-              <h5>Legal Services Information</h5>
-              <p>We do not share confidential client information except:</p>
-              <ul>
-                <li>With your express written consent</li>
-                <li>As required by law or court order</li>
-                <li>To prevent death or substantial bodily harm</li>
-                <li>As permitted under applicable Rules of Professional Conduct</li>
-              </ul>
-              <h5>Website Analytics Information</h5>
-              <p>Google Analytics data is shared only with Google in accordance with their privacy policy. We do not combine this data with personally identifiable client information.</p>
-              <h4>Third-Party Services</h4>
-              <h5>Google Analytics</h5>
-              <p>We use Google Analytics to analyze website traffic and usage patterns. Google Analytics:
-              </p>
-              <ul>
-                <li>Uses cookies and similar technologies</li>
-                <li>Collects data in accordance with Google's Privacy Policy</li>
-                <li>Provides aggregated, non-personally identifiable data</li>
-                <li>Allows us to opt users out upon request.</li>
-              </ul>
-              <p>You may opt out of Google Analytics tracking by:</p>
-              <ul>
-                <li>Installing the Google Analytics Opt-out Browser Add-on</li>
-                <li>Using browser settings to block analytics cookies</li>
-              </ul>
-              <h5>Other Third-Party Services</h5>
-              <p>We may use other third-party services (such as document review platforms, case management systems, or cloud storage) when necessary for legal representation. Any such use will:
-              </p>
-              <ul>
-                <li>Be evaluated for security and confidentiality protections</li>
-                <li>Comply with applicable ethical rules regarding technology and client confidentiality</li>
-                <li>Include appropriate confidentiality agreements when required</li>
-              </ul>
-              <h4>Data Security</h4>
-              <p>We implement reasonable security measures to protect client information, including:</p>
-              <ul>
-                <li>Secure servers and encrypted communications where appropriate
-                </li>
-                <li>Access controls and authentication procedures
-                </li>
-                <li>Regular security assessments and updates</li>
-                <li>Staff training on confidentiality and data protection</li>
-              </ul>
-              <h4>Retention of Information</h4>
-              <p>Client files and information are retained in accordance with:
-              </p>
-              <ul>
-                <li>Professional responsibility requirements</li>
-                <li>Legal and regulatory requirements</li>
-                <li>Our internal document retention policies</li>
-              </ul>
-              <p>Website analytics data is retained according to Google Analytics' standard retention periods.</p>
-              <h4>Updates to This Notice</h4>
-              <p>We may update this Privacy Notice to reflect changes in our practices or applicable law. Updated versions will be posted on our website with the effective date clearly marked. Your continued use of this website after any changes constitutes acceptance of the updated Privacy Notice.</p>
-              <h4>Questions About This Notice</h4>
-              <p>If you have questions about this Privacy Notice or our privacy practices, please contact us using the contact information provided elsewhere on this website.</p>
-            </div>
+          <div class="modal-body">
+            <h4>Attorney Advertising Notice</h4>
+            <p>This website constitutes attorney advertising under the rules of professional conduct in various jurisdictions. Prior results do not guarantee a similar outcome in future cases.</p>
+            <h4>No Attorney-Client Relationship</h4>
+            <p><strong>IMPORTANT: </strong>The transmission of information via this website does not create an attorney-client relationship between you and Alexander Lee or Lumen Intellectual Property Law. An attorney-client relationship is established only through a signed retainer agreement after a consultation and mutual agreement to representation.</p>
+            <p>Do not send confidential or time-sensitive information through this website's contact forms or email. Information transmitted through this website may not be privileged or confidential.</p>
+            <h4>Not Legal Advice</h4>
+            <p>The information provided on this website is for general informational purposes only and should not be construed as legal advice. The law varies by jurisdiction and individual circumstances. You should not act or refrain from acting based on information contained on this website without seeking professional legal counsel appropriate to your particular situation.</p>
+            <h4>No Guarantee of Results</h4>
+            <p><strong>Prior results do not guarantee a similar outcome. </strong>Past results obtained by Lumen Intellectual Property Law do not guarantee, warrant, or predict the outcome of your legal matter. Every case is unique and must be evaluated on its individual facts and circumstances. Case results depend upon a variety of factors unique to each case and matter. Attorney advertising materials may contain testimonials or case results that do not reflect the experiences of all clients, and such results should not be considered typical.</p>
+            <h4>Jurisdictional Limitations
+            </h4>
+            <p>Alexander Lee is licensed to practice law only in the jurisdictions where admitted. This website is not intended to solicit clients outside the geographical areas where Alexander Lee is licensed to practice law. If you are located outside these jurisdictions, please consult with a local attorney.</p>
+            <h4>Third-Party Links and Content</h4>
+            <p>This website may contain links to third-party websites or resources. We do not endorse and are not responsible for the content, accuracy, or opinions expressed on such websites. Links to third-party sites are provided for convenience only.</p>
+            <h4>Website Accuracy and Updates
+            </h4>
+            <p>While we strive to keep the information on this website current and accurate, laws change frequently, and we make no representations or warranties regarding the completeness, accuracy, or timeliness of the content. This website may not reflect the most current legal developments.</p>
+            <h4>Professional Rules Compliance</h4>
+            <p>This website and Lumen Intellectual Property Law are governed by the applicable Rules of Professional Conduct, including but not limited to:</p>
+            <ul>
+              <li>American Bar Association Model Rules of Professional Conduct</li>
+              <li>California Rules of Professional Conduct (if applicable)</li>
+              <li>Texas Disciplinary Rules of Professional Conduct (if applicable)</li>
+              <li>New York Rules of Professional Conduct (if applicable)</li>
+              <li>Local court rules and jurisdictional requirements</li>
+            </ul>
+            <h4>Specialization and Certification Disclaimers</h4>
+            <p>Unless specifically certified by the appropriate board of legal specialization in the relevant jurisdiction, no representation is made that Alexander Lee is certified as a specialist in any particular area of law. Any reference to experience or focus in particular practice areas should not be construed as certification or specialization.</p>
+            <h4>Disclaimer Prominence</h4>
+            <p>This disclaimer is provided with equal prominence to all content on this website to ensure viewers' expectations are not misled regarding legal services or potential outcomes.</p>
+            <p><strong>DO NOT </strong>include confidential, privileged, or time-sensitive information in any communication through this website. Use of this website does not preserve any attorney-client privilege or work-product protection.</p>
+            <h4>Confidentiality Warning</h4>
+            <p>If you wish to discuss a potential legal matter, please contact my office directly by telephone to schedule a consultation. Email communications through this website should not be considered secure.</p>
+          </div>
+        </div>
+        <div id="modal-privacy" class="modal hidden">
+          <div class="modal-title">
+            <h3>Privacy Notice</h3>
+            <button onclick="closeModal()" class="button-w-icon-modal-close">
+              <img class="icon-lg" src="images/xmark-solid-full-black.svg" alt="">
+              Close</button>
+          </div>
+          <div class="modal-body">
+            <p>This website collects anonymous user data. By using this website, you acknowledge that you have read this Privacy Notice and agree to its terms. If you do not agree with this Privacy Notice, please do not use this website.</p>
+            <h4>Our Commitment to Your Privacy</h4>
+            <p>We are committed to protecting the confidentiality and privacy of our clients and website visitors. This Privacy Notice explains how we collect, use, and protect information when you visit our website or engage our legal services.</p>
+            <h4>Attorney-Client Privilege and Confidentiality</h4>
+            <p>All communications between you and our firm regarding legal representation are protected by attorney-client privilege and the ethical duty of confidentiality. We maintain the highest standards of confidentiality in accordance with the Rules of Professional Conduct in California, Texas, New York, and the American Bar Association Model Rules.</p>
+            <p><strong>Important: </strong>Do not send confidential or sensitive information through unsecured email or website contact forms until an attorney-client relationship has been formally established.</p>
+            <h4>Information We Collect</h4>
+            <h5>Legal Services</h5>
+            <p>When you engage our services, we collect information necessary to provide legal representation, including:</p>
+            <ul>
+              <li>Personal and contact information</li>
+              <li>Case-related documents and communications</li>
+              <li>Financial information for billing purposes</li>
+              <li>Other information relevant to your legal matter</li>
+            </ul>
+            <h5>Website Analytics</h5>
+            <p>Our website uses Google Analytics to understand how visitors interact with our site. This service may collect:</p>
+            <ul>
+              <li>IP addresses (anonymized)</li>
+              <li>Browser and device information</li>
+              <li>Pages visited and time spent on sit</li>
+              <li>Referring websites</li>
+              <li>General geographic location (city/state level)</li>
+            </ul>
+            <p><strong>No confidential client information or attorney-client privileged communications are transmitted to Google Analytics.</strong></p>
+            <h4>How We Use Information</h4>
+            <h5>Legal Services Information</h5>
+            <p>Information collected in connection with legal representation is used solely to:</p>
+            <ul>
+              <li>Provide competent legal services</li>
+              <li>Communicate with you about your legal matter</li>
+              <li>Process billing and payments</li>
+              <li>Comply with legal and ethical obligations</li>
+            </ul>
+            <h5>Website Analytics Information</h5>
+            <p>Analytics data helps us:</p>
+            <ul>
+              <li>Improve website functionality and user experien</li>
+              <li>Understand which content is most helpful to visitor</li>
+              <li>Make informed decisions about website improvements</li>
+            </ul>
+            <h4>Information Sharing and Disclosure</h4>
+            <h5>Legal Services Information</h5>
+            <p>We do not share confidential client information except:</p>
+            <ul>
+              <li>With your express written consent</li>
+              <li>As required by law or court order</li>
+              <li>To prevent death or substantial bodily harm</li>
+              <li>As permitted under applicable Rules of Professional Conduct</li>
+            </ul>
+            <h5>Website Analytics Information</h5>
+            <p>Google Analytics data is shared only with Google in accordance with their privacy policy. We do not combine this data with personally identifiable client information.</p>
+            <h4>Third-Party Services</h4>
+            <h5>Google Analytics</h5>
+            <p>We use Google Analytics to analyze website traffic and usage patterns. Google Analytics:
+            </p>
+            <ul>
+              <li>Uses cookies and similar technologies</li>
+              <li>Collects data in accordance with Google's Privacy Policy</li>
+              <li>Provides aggregated, non-personally identifiable data</li>
+              <li>Allows us to opt users out upon request.</li>
+            </ul>
+            <p>You may opt out of Google Analytics tracking by:</p>
+            <ul>
+              <li>Installing the Google Analytics Opt-out Browser Add-on</li>
+              <li>Using browser settings to block analytics cookies</li>
+            </ul>
+            <h5>Other Third-Party Services</h5>
+            <p>We may use other third-party services (such as document review platforms, case management systems, or cloud storage) when necessary for legal representation. Any such use will:
+            </p>
+            <ul>
+              <li>Be evaluated for security and confidentiality protections</li>
+              <li>Comply with applicable ethical rules regarding technology and client confidentiality</li>
+              <li>Include appropriate confidentiality agreements when required</li>
+            </ul>
+            <h4>Data Security</h4>
+            <p>We implement reasonable security measures to protect client information, including:</p>
+            <ul>
+              <li>Secure servers and encrypted communications where appropriate
+              </li>
+              <li>Access controls and authentication procedures
+              </li>
+              <li>Regular security assessments and updates</li>
+              <li>Staff training on confidentiality and data protection</li>
+            </ul>
+            <h4>Retention of Information</h4>
+            <p>Client files and information are retained in accordance with:
+            </p>
+            <ul>
+              <li>Professional responsibility requirements</li>
+              <li>Legal and regulatory requirements</li>
+              <li>Our internal document retention policies</li>
+            </ul>
+            <p>Website analytics data is retained according to Google Analytics' standard retention periods.</p>
+            <h4>Updates to This Notice</h4>
+            <p>We may update this Privacy Notice to reflect changes in our practices or applicable law. Updated versions will be posted on our website with the effective date clearly marked. Your continued use of this website after any changes constitutes acceptance of the updated Privacy Notice.</p>
+            <h4>Questions About This Notice</h4>
+            <p>If you have questions about this Privacy Notice or our privacy practices, please contact us using the contact information provided elsewhere on this website.</p>
           </div>
         </div>
       </div>
     </div>
   </div>
+</div>
 </div>
 
   </body>

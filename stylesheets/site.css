@@ -177,7 +177,7 @@ button[type="submit"]:hover {
   font-weight: bold;
   border: none; }
 
-.button-w-icon-modal-close {
+.button-w-icon-modal-close, .button-w-icon-popup-close {
   background: lightgray;
   color: black;
   padding: 4px 12px;
@@ -192,14 +192,13 @@ button[type="submit"]:hover {
   border: none;
   font-size: small; }
 
-.button-w-icon-modal-close:hover {
+.button-w-icon-modal-close:hover, .button-w-icon-popup-close:hover {
   background: darkgray; }
 
-#accept-consent {
-  color: white; }
-
-#accept-consent:hover {
-  color: darkgray; }
+.button-w-icon-popup-close {
+  position: absolute;
+  top: 16px;
+  right: 16px; }
 
 .navbar {
   background-color: #fffcf6;
@@ -381,8 +380,8 @@ a {
   align-items: center; }
 
 #am img {
-  width: 100%;
-  border-radius: 16px;
+  width: 50%;
+  border-radius: 8px;
   -webkit-box-shadow: 0 0 32px rgba(0, 0, 0, 0.9);
           box-shadow: 0 0 32px rgba(0, 0, 0, 0.9); }
 
@@ -661,6 +660,22 @@ Make all .box-card columns equal width and height
   flex-direction: column;
   flex: 1 1 0; }
 
+.icon-normal {
+  width: 1.1rem;
+  height: auto; }
+
+.icon-lg {
+  width: 1.6rem;
+  height: auto; }
+
+.icon-xl {
+  width: 2rem;
+  height: auto; }
+
+.icon-2xl {
+  width: 2.7rem;
+  height: auto; }
+
 .modal {
   /* modals are hidden by default */
   display: none;
@@ -810,16 +825,6 @@ body.modal-open {
   background-repeat: no-repeat;
   background-blend-mode: multiply; }
 
-#avatar {
-  display: flex;
-  justify-content: center; }
-
-#cred img {
-  size: 66%;
-  border-radius: 50%;
-  -webkit-box-shadow: 0 0 32px rgba(0, 0, 0, 0.9);
-          box-shadow: 0 0 32px rgba(0, 0, 0, 0.9); }
-
 /* Create two equal columns that floats next to each other */
 .two-col-column {
   float: left;
@@ -835,7 +840,7 @@ body.modal-open {
 #dd .two-col-column {
   color: black; }
 
-img {
+.mhs1 {
   width: 66%;
   max-width: 240px;
   border-color: 5px whitesmoke; }
@@ -900,8 +905,8 @@ img {
   border: none;
   justify-content: space-between; }
 
-.inline-top {
-  vertical-align: top; }
+.inline {
+  justify-content: flex-start; }
 
 #cred .inline-gray {
   padding: 2px;
@@ -1088,7 +1093,14 @@ input:focus, select:focus, textarea:focus {
   padding-bottom: 6px; }
 
 .fine-print {
-  justify-content: center; }
+  justify-items: center; }
+
+.footer-bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center; }
 
 * {
   margin: 0;

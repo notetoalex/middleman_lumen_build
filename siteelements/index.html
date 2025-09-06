@@ -20,17 +20,18 @@
   <body>
     <div id="popup-consent" class="hidden">
   <div class="container-custom">
-    <div class="inline">
-      <div class="consent-text">
-        <span>
-          This website uses cookies to collect anonymous user data to improve the websites functionality and performance. By using this website, you consent to the use of such cookies and agree to the terms of the <a onclick="openModal('modal-privacy')" href="#" class="privacy-link">Privacy Notice</a>.
-        </span>
-      </div>
-      <button onclick="acceptConsent()" id="accept-consent" class="button-w-icon-popup-consent">
-        <i class="fa-solid fa-square-xmark fa-2xl"></i>
-      </button>
+    <div class="">
+      <button onclick="acceptConsent()" id="accept-consent" class="button-w-icon-popup-close">
+        <img class="icon-lg" src="images/xmark-solid-full-black.svg" alt="">
+        Close</button>
+    </button>
+    <div class="consent-text">
+      <span>
+        This website uses cookies to collect anonymous user data to improve the websites functionality and performance. By using this website, you consent to the use of such cookies and agree to the terms of the <a onclick="openModal('modal-privacy')" href="#" class="privacy-link">Privacy Notice</a>.
+      </span>
     </div>
   </div>
+</div>
 </div>
 <div class="navbar">
   <div class="container-custom">
@@ -38,11 +39,13 @@
       <a class="navbar-brand-link" href="/">
         <img class="navbar-brand" src="/images/Lumen_RedIcon.svg" alt="">
       </a>
-      <button id="open-sidebar-button" onclick="openSidebar()" aria-label="Open sidebar" aria-expanded="false" aria-controls="navbar"><i class="fa-solid fa-bars fa-xl"></i></button>
+      <button id="open-sidebar-button" onclick="openSidebar()" aria-label="Open sidebar" aria-expanded="false" aria-controls="navbar"><img class="icon-xl" src="/images/bars-solid-full.svg" alt="">
+      </button>
       <nav id="sidebar-menu">
         <ul>
           <li class="justify-end"><button id="close-sidebar-button" onclick="closeSidebar()" aria-label="Close sidebar">
-              <i class="fa-solid fa-xmark fa-xl" style="color: #ffffff;"></i></button></li>
+              <img class="icon-xl" src="/images/xmark-solid-full.svg" alt="">
+            </button></li>
           <li class="justify-left"><a class="button-nav" href="/">Home</a></li>
           <li class="justify-left"><a class="button-nav" href="/services">Services</a></li>
           <li class="justify-left"><a class="button-nav" href="/about">About</a></li>
