@@ -100,7 +100,7 @@ document.addEventListener('DOMContentLoaded', function() {
   if (textarea) {
     textarea.addEventListener('input', updateCharCount);
   }
-  const clearButton = document.getElementById('reset-form');
+  const clearButton = document.getElementById('button-reset-form');
   if (clearButton) {
     const form = clearButton.closest('form');
     if (form) {
