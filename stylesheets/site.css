@@ -787,15 +787,19 @@ body.modal-open {
   padding: 3rem;
   opacity: 1;
   background-color: black;
-  -webkit-transition: opacity 0.8s ease;
-  transition: opacity 0.8s ease;
-  border: 2px solid white; }
+  -webkit-transition: opacity 0.8s ease-in-out, -webkit-transform 0.8s ease-in-out;
+  transition: opacity 0.8s ease-in-out, -webkit-transform 0.8s ease-in-out;
+  transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
+  transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out, -webkit-transform 0.8s ease-in-out;
+  border: 3px solid white;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  z-index: 10001; }
   #popup-consent.hidden {
-    opacity: 0; }
-
-.inline {
-  display: flex;
-  gap: 5ch; }
+    opacity: 0;
+    pointer-events: none;
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%); }
 
 /* Add to your stylesheet */
 .button-w-icon-popup-consent {
@@ -926,7 +930,6 @@ body.modal-open {
     width: 100%; } }
 
 #cred li, #pp li, #dd li, #lc li {
-  font-size: smaller;
   list-style-type: disc;
   /* For unordered lists */
   -webkit-margin-start: 1.25em;
@@ -1015,9 +1018,8 @@ body.modal-open {
   justify-items: center;
   justify-content: center;
   width: auto;
-  align-items: center;
-  margin: auto; }
-  @media (max-width: 720px) {
+  align-items: center; }
+  @media (max-width: 540px) {
     .contact-info {
       -ms-grid-columns: 1fr;
       grid-template-columns: 1fr; } }
@@ -1039,9 +1041,8 @@ body.modal-open {
   align-items: center; }
 
 #ft .firm-logo {
-  width: 75%;
-  height: auto;
-  justify-items: center; }
+  width: 190px;
+  height: auto; }
 
 .fine-print {
   justify-items: center;
