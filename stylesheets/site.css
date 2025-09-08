@@ -769,6 +769,9 @@ Make all .box-card columns equal width and height
   /* Restore default padding */
   list-style-position: outside; }
 
+.modal-body li, .modal-body p {
+  font-size: small; }
+
 body.modal-open {
   /* body overflow is hidden to hide main scrollbar when modal window is open */
   overflow: hidden;
