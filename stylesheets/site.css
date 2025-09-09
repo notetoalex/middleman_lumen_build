@@ -153,6 +153,9 @@ button {
   /* this is needed because padding from other elements might interfere with the present element.*/
   font-weight: bold; }
 
+.footer-bottom .button-nav {
+  color: white; }
+
 .button-contact {
   background-image: -webkit-gradient(linear, left top, right top, from(#9b0e15), color-stop(51%, red), to(#9b0e15));
   background-image: linear-gradient(to right, #9b0e15 0%, red 51%, #9b0e15 100%);
@@ -377,10 +380,6 @@ nav a.accent-link {
 a {
   text-decoration: none; }
 
-#ser {
-  background-image: -webkit-gradient(linear, left top, right bottom, from(white), to(#595f72));
-  background-image: linear-gradient(to bottom right, white, #595f72); }
-
 #am {
   background-size: cover;
   background-repeat: no-repeat;
@@ -390,8 +389,7 @@ a {
 #cl {
   background-size: cover;
   background-repeat: no-repeat;
-  background-blend-mode: multiply;
-  color: white; }
+  background-blend-mode: multiply; }
 
 #ft {
   background-size: cover;
@@ -740,7 +738,6 @@ Make all .box-card columns equal width and height
   display: none !important; }
 
 .modal-title {
-  background: #fffcf6;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -751,12 +748,15 @@ Make all .box-card columns equal width and height
   padding: 8px; }
 
 .modal-body {
-  background: #fffcf6;
   max-height: calc(90%);
   overflow: auto;
   text-align: left;
   padding: 8px;
   margin: auto; }
+
+.modal-title, .modal-body {
+  background: white;
+  color: black; }
 
 .modal-body li {
   list-style-type: disc;
@@ -847,9 +847,6 @@ body.modal-open {
   background-image: -webkit-gradient(linear, left top, right bottom, from(white), to(#595f72));
   background-image: linear-gradient(to bottom right, white, #595f72);
   color: black; }
-
-#pp h5, #dd h5, #lc h5 {
-  color: #ef7b45; }
 
 #dd {
   background-image: -webkit-gradient(linear, left top, right bottom, from(black), to(#595f72));
@@ -1003,12 +1000,13 @@ body.modal-open {
   border: white 1px solid; }
 
 #ft {
-  color: black; }
+  background: black; }
 
 #ft .box-l {
   justify-items: center; }
 
 .contact-info {
+  color: white;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
@@ -1029,12 +1027,6 @@ body.modal-open {
 .fine-print {
   justify-items: center; }
 
-.footer-bottom span {
-  display: flex;
-  gap: 2ch;
-  align-items: center;
-  justify-content: space-evenly; }
-
 #ft .firm-logo-area {
   display: flex;
   justify-content: center;
@@ -1044,17 +1036,15 @@ body.modal-open {
   width: 190px;
   height: auto; }
 
-.fine-print {
-  justify-items: center;
-  justify-content: space-evenly;
-  color: black; }
-
-.fine-print p {
+.footer-bottom {
   font-size: smaller;
-  color: black; }
+  color: white; }
+
+#contact {
+  background: #595f72;
+  color: white; }
 
 #contact .l-side {
-  background-color: #595f72;
   padding: 8px;
   color: white;
   max-width: 600px;
@@ -1155,6 +1145,9 @@ input:focus, select:focus, textarea:focus {
   /* This is necessary to enable multi-column layout */
   text-decoration: none;
   outline: none; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Merriweather', serif; }
 
 :root {
   --main-font: 'Inter', sans-serif;
