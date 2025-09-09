@@ -219,7 +219,7 @@ button[type="submit"]:hover {
   right: 16px; }
 
 .navbar {
-  background-color: #fffcf6;
+  background: #fffcf6;
   align-items: center;
   /* Vertically centers the items */
   position: fixed;
@@ -381,6 +381,24 @@ nav a.accent-link {
 a {
   text-decoration: none; }
 
+#ser, #am, #cl {
+  background: #fffcf6; }
+
+#ser h4, #am h4, #cl h4 {
+  color: #9b0e15; }
+
+#ser h5, #am h5, #cl h5 {
+  color: #6b7280; }
+
+#ser h6, #am h6, #cl h6 {
+  color: #6b7280; }
+
+#ser p, #am p, #cl p {
+  color: #374151; }
+
+#ser li, #am li, #cl li {
+  color: #374151; }
+
 #am {
   background-size: cover;
   background-repeat: no-repeat;
@@ -391,12 +409,6 @@ a {
   background-size: cover;
   background-repeat: no-repeat;
   background-blend-mode: multiply; }
-
-#ft {
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-blend-mode: multiply;
-  color: white; }
 
 #am .image-two-col {
   display: -ms-grid;
@@ -636,7 +648,7 @@ Make all .box-card columns equal width and height
 .card-product {
   overflow: hidden;
   height: 120px;
-  color: white;
+  color: #374151;
   -webkit-box-shadow: 0 0 16px rgba(0, 0, 0, 0.5);
           box-shadow: 0 0 16px rgba(0, 0, 0, 0.5);
   display: flex;
@@ -646,15 +658,25 @@ Make all .box-card columns equal width and height
   gap: 16px; }
 
 #card-pp {
-  background-color: #9b0e15; }
+  background-color: #f1f5f9; }
+
+#card-pp h5 {
+  color: #2563eb; }
 
 #card-dd {
-  background-color: #595f72; }
+  background-color: #f0f9ff; }
+
+#card-dd h5 {
+  color: #0891b2; }
 
 #card-lc {
-  background-color: #4169E1; }
+  background-color: #fef2f2; }
 
-.card-product h2 {
+#card-lc h5 {
+  color: #9b0e15; }
+
+.card-product h5 {
+  color: #9b0e15;
   font-size: 16px;
   font-weight: bold;
   margin: 0; }
@@ -662,9 +684,11 @@ Make all .box-card columns equal width and height
 .card-product p {
   font-size: 12px;
   line-height: 1.4;
-  opacity: .7;
   margin-bottom: 0;
   margin-top: 8px; }
+
+.card-product-infos h5 {
+  color: #9b0e15; }
 
 .card-product .card-info {
   padding: 16px; }
@@ -845,19 +869,28 @@ body.modal-open {
   padding-bottom: 16px; }
 
 #pp {
-  background-image: -webkit-gradient(linear, left top, right bottom, from(white), to(#595f72));
-  background-image: linear-gradient(to bottom right, white, #595f72);
-  color: black; }
+  background-color: #f1f5f9; }
+
+#pp h4 {
+  color: #2563eb; }
 
 #dd {
-  background-image: -webkit-gradient(linear, left top, right bottom, from(black), to(#595f72));
-  background-image: linear-gradient(to bottom right, black, #595f72);
-  color: white; }
+  background-color: #f0f9ff; }
+
+#dd h4 {
+  color: #0891b2; }
 
 #lc {
-  background-image: -webkit-gradient(linear, right bottom, left top, from(royalblue), to(#fffcf6));
-  background-image: linear-gradient(to top left, royalblue, #fffcf6);
-  color: black; }
+  background-color: #fef2f2; }
+
+#lc h4 {
+  color: #9b0e15; }
+
+#pp h5, #dd h5, #lc h5 {
+  color: #6b7280; }
+
+#pp p, #dd p, #lc p {
+  color: #374151; }
 
 #cred {
   background-size: cover;
@@ -938,6 +971,9 @@ body.modal-open {
   /* Restore default padding */
   list-style-position: outside; }
 
+#cred .name-title {
+  color: #374151; }
+
 #cred .inline-red {
   padding: 2px;
   border-bottom: 4px solid #9b0e15; }
@@ -947,6 +983,9 @@ body.modal-open {
   gap: 1ch;
   border: none;
   justify-content: space-between; }
+
+#cred h6 {
+  color: #9b0e15; }
 
 .inline {
   justify-content: flex-start; }
@@ -958,6 +997,12 @@ body.modal-open {
 #cred .inline-orange {
   padding: 2px;
   border-bottom: 4px solid #ef7b45; }
+
+#cred .cred-details {
+  color: #374151; }
+
+#cred li, #cred p {
+  color: #374151; }
 
 .grid-footer-lite {
   display: -ms-grid;
@@ -1017,16 +1062,18 @@ body.modal-open {
   justify-items: center;
   justify-content: center;
   width: auto;
-  align-items: center; }
+  align-items: center;
+  color: white; }
   @media (max-width: 540px) {
     .contact-info {
       -ms-grid-columns: 1fr;
       grid-template-columns: 1fr; } }
 #ft .icon-plus-text {
-  padding: 8px; }
+  padding: 8px;
+  color: white; }
 
 #ft a[href^="tel"] {
-  color: inherit !important;
+  color: white;
   text-decoration: none; }
 
 .fine-print {
