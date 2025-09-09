@@ -721,6 +721,10 @@ Make all .box-card columns equal width and height
 .image-two-col {
   color: #4169e1; }
 
+#am a {
+  justify-content: center;
+}
+
 #headshot {
   display: flex;
   justify-content: center;
