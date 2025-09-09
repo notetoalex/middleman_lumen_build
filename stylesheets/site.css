@@ -722,8 +722,7 @@ Make all .box-card columns equal width and height
   color: #4169e1; }
 
 #am a {
-  justify-content: center;
-}
+  justify-content: center; }
 
 #headshot {
   display: flex;
