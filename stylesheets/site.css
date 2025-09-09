@@ -1023,7 +1023,8 @@ body.modal-open {
       -ms-grid-columns: 1fr;
       grid-template-columns: 1fr; } }
 .icon-plus-text {
-  padding: 8px; }
+  padding: 8px;
+  color: white; }
 
 .fine-print {
   justify-items: center; }
