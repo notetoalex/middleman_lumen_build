@@ -370,12 +370,12 @@ nav a.accent-link {
   padding-left: 15%;
   padding-top: 72px;
   padding-bottom: 72px;
-  border-color: whitesmoke; }
+  border-color: white; }
 
 .hero-text {
   width: 55%;
-  color: whitesmoke;
-  border-color: whitesmoke;
+  color: white;
+  border-color: white;
   padding: 12px 0px; }
 
 a {
@@ -868,28 +868,34 @@ body.modal-open {
   padding-top: 16px;
   padding-bottom: 16px; }
 
+.service-intro h4 {
+  color: #9b0e15; }
+
+.service-intro {
+  background: #fffcf6; }
+
 #pp {
   background-color: #f1f5f9; }
 
-#pp h4 {
+#pp h5 {
   color: #2563eb; }
 
 #dd {
   background-color: #f0f9ff; }
 
-#dd h4 {
+#dd h5 {
   color: #0891b2; }
 
 #lc {
   background-color: #fef2f2; }
 
-#lc h4 {
+#lc h5 {
   color: #9b0e15; }
 
-#pp h5, #dd h5, #lc h5 {
+#pp h6, #dd h6, #lc h6 {
   color: #6b7280; }
 
-#pp p, #dd p, #lc p {
+.service-intro p, #pp p, #dd p, #lc p {
   color: #374151; }
 
 #cred {
@@ -960,7 +966,7 @@ body.modal-open {
   .card-service {
     width: 100%; } }
 
-#cred li, #pp li, #dd li, #lc li {
+.service-intro li, #cred li, #pp li, #dd li, #lc li {
   list-style-type: disc;
   /* For unordered lists */
   -webkit-margin-start: 1.25em;
@@ -969,7 +975,8 @@ body.modal-open {
   -webkit-padding-start: 0;
           padding-inline-start: 0;
   /* Restore default padding */
-  list-style-position: outside; }
+  list-style-position: outside;
+  color: #374151; }
 
 #cred .name-title {
   color: #374151; }
