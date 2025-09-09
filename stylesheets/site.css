@@ -1000,13 +1000,14 @@ body.modal-open {
   border: white 1px solid; }
 
 #ft {
-  background: black; }
+  background: black;
+  color: white;}
 
 #ft .box-l {
   justify-items: center; }
 
 .contact-info {
-  color: white;
+  /* color: white; */
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
