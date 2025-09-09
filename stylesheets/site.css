@@ -1028,10 +1028,9 @@ body.modal-open {
 
 #ft .icon-plus-text {
   padding: 8px;
-    color: inherit; /* To prevent the default blue link color */
-  text-decoration: none; /* To remove the default underline */
-  /* Add other styles as needed */
+
  }
+
 
 .fine-print {
   justify-items: center; }
