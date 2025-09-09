@@ -1025,11 +1025,6 @@ body.modal-open {
       grid-template-columns: 1fr; } }
 
 
-/* #ft a[href^="tel"] {
-  color: inherit; /* To prevent the default blue link color */
-  text-decoration: none; /* To remove the default underline */
-  /* Add other styles as needed */
-} */
 
 #ft .icon-plus-text {
   padding: 8px;
