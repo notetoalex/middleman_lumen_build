@@ -1022,6 +1022,11 @@ body.modal-open {
     .contact-info {
       -ms-grid-columns: 1fr;
       grid-template-columns: 1fr; } }
+
+
+.firm-info-group {
+  color: white;
+}
 #ft .icon-plus-text {
   padding: 8px;
   color: white; }
