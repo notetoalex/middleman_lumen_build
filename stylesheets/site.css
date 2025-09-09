@@ -1026,8 +1026,9 @@ body.modal-open {
 
 
 #ft a[href^="tel"] {
-  color: white !important;
-  text-decoration: none;
+  color: inherit; /* To prevent the default blue link color */
+  text-decoration: none; /* To remove the default underline */
+  /* Add other styles as needed */
 }
 
 #ft .icon-plus-text {
