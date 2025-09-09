@@ -1001,6 +1001,7 @@ body.modal-open {
 
 #ft {
   background: black;
+  color: white;
   }
 
 #ft .box-l {
@@ -1024,12 +1025,14 @@ body.modal-open {
       grid-template-columns: 1fr; } }
 
 
-.firm-info-group {
-  color: white;
+#ft a[href^="tel"] {
+  color: white !important;
+  text-decoration: none;
 }
+
 #ft .icon-plus-text {
   padding: 8px;
-  color: white; }
+ }
 
 .fine-print {
   justify-items: center; }
