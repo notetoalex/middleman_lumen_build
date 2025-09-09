@@ -218,6 +218,9 @@ button[type="submit"]:hover {
   top: 16px;
   right: 16px; }
 
+.service-outro .box {
+  justify-items: center; }
+
 .navbar {
   background: #fffcf6;
   align-items: center;
@@ -868,11 +871,15 @@ body.modal-open {
   padding-top: 16px;
   padding-bottom: 16px; }
 
-.service-intro h4 {
+.service-intro h4, .outro h4 {
   color: #9b0e15; }
 
-.service-intro {
+.service-intro, .outro {
   background: #fffcf6; }
+
+.outro .box {
+  justify-items: center;
+  align-items: center; }
 
 #pp {
   background-color: #f1f5f9; }
@@ -895,7 +902,7 @@ body.modal-open {
 #pp h6, #dd h6, #lc h6 {
   color: #6b7280; }
 
-.service-intro p, #pp p, #dd p, #lc p {
+.service-intro p, #pp p, #dd p, #lc p, .outro p {
   color: #374151; }
 
 #cred {
