@@ -299,7 +299,8 @@ nav a.accent-link {
     padding: 0;
     margin: 0; }
   .button-nav {
-    padding-left: 2ch; }
+    padding-left: 2ch;
+    border-radius: 0; }
   #sidebar-menu {
     -webkit-transform: translateX(200%);
             transform: translateX(200%);
@@ -1001,14 +1002,12 @@ body.modal-open {
 
 #ft {
   background: black;
-  color: white;
-  }
+  color: white; }
 
 #ft .box-l {
   justify-items: center; }
 
 .contact-info {
-  /* color: white; */
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
@@ -1023,18 +1022,12 @@ body.modal-open {
     .contact-info {
       -ms-grid-columns: 1fr;
       grid-template-columns: 1fr; } }
-
-
-
 #ft .icon-plus-text {
-  padding: 8px;
-
- }
+  padding: 8px; }
 
 #ft a[href^="tel"] {
   color: inherit !important;
-  text-decoration: none;
-}
+  text-decoration: none; }
 
 .fine-print {
   justify-items: center; }

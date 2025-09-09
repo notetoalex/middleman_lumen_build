@@ -16,27 +16,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <!-- For Fontshare -->
-
-<!-- disable iOS phone number detection and changing font color -->
-    <meta name="format-detection" content="telephone=no">
+    <!-- disable iOS phone number detection and changing font color -->
+    <!-- <meta name="format-detection" content="telephone=no"> -->
   </head>
   <body>
-    <div id="popup-consent" class="hidden">
-  <div class="container-custom">
-    <div class="">
-      <button onclick="acceptConsent()" id="accept-consent" class="button-w-icon-popup-close">
-        <img class="icon-lg" src="/middleman_lumen_build/images/xmark-solid-full-black.svg" alt="">
-        Close</button>
-    </button>
-    <div class="consent-text">
-      <span>
-        This website uses cookies to collect anonymous user data to improve the website's functionality and performance. By using this website, you consent to the use of such cookies and agree to the terms of the <a onclick="openModal('modal-privacy')" href="#" class="privacy-link">Privacy Notice</a>.
-      </span>
-    </div>
-  </div>
-</div>
-</div>
-<div class="navbar">
+    <div class="navbar">
   <div class="container-custom">
     <div class="navbar-flexbox">
       <a class="navbar-brand-link" href="/middleman_lumen_build/">
@@ -318,6 +302,7 @@
     </div>
   </div>
 </div>
+
 <div id="ft"class="footer section-break">
   <div class="container-footer">
     <div class="contact-info two-col-row boxes-two">
@@ -328,7 +313,7 @@
         <div class="firm-info-group">
           <div class="icon-plus-text">
             <img class="icon-lg" src="/middleman_lumen_build/images/phone-solid-full.svg" alt="">
-            <p>+1 (805) 254-9555</p>
+            <p><a href="tel:+18052549555">+1 (805) 254-9555</a></p>
           </div>
           <div class="icon-plus-text">
             <img class="icon-lg" src="/middleman_lumen_build/images/envelope-solid-full.svg" alt="">
@@ -515,10 +500,8 @@
     </div>
   </div>
 </div>
-
-
-  </body>
-  <!-- Your own JavaScript file -->
-  <!-- defer means to wait for the website to load -->
-  <script src="./middleman_lumen_build/javascript/site.js" defer></script>
+</body>
+<!-- Your own JavaScript file -->
+<!-- defer means to wait for the website to load -->
+<script src="./middleman_lumen_build/javascript/site.js" defer></script>
 </html>

@@ -20,16 +20,20 @@
     <!-- <meta name="format-detection" content="telephone=no"> -->
   </head>
   <body>
-    <div id="ser" class="page-banner" style="background-image: linear-gradient(to bottom right,
-rgba(65, 105, 225, .9),rgba(0, 0, 0, .7)), url('/images/pexels-ivaoo-691710.jpg');">
+    <div id="popup-consent" class="hidden">
   <div class="container-custom">
-    <div class="page">
-      <div class="page-text">
-        <h3>Services Offered</h3>
-        <span class="anchor" id="pp-link"></span> <!-- this anchor is placed here so that the form is viewable correctly -->
-      </div>
+    <div class="">
+      <button onclick="acceptConsent()" id="accept-consent" class="button-w-icon-popup-close">
+        <img class="icon-lg" src="images/xmark-solid-full-black.svg" alt="">
+        Close</button>
+    </button>
+    <div class="consent-text">
+      <span>
+        This website uses cookies to collect anonymous user data to improve the website's functionality and performance. By using this website, you consent to the use of such cookies and agree to the terms of the <a onclick="openModal('modal-privacy')" href="#" class="privacy-link">Privacy Notice</a>.
+      </span>
     </div>
   </div>
+</div>
 </div>
 
   </body>
