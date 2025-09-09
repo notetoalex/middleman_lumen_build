@@ -727,7 +727,7 @@ Make all .box-card columns equal width and height
   align-items: center; }
 
 #am .mhs2 {
-  width: 50%;
+  width: 60%;
   border-radius: 8px;
   -webkit-box-shadow: 0 0 32px rgba(0, 0, 0, 0.9);
           box-shadow: 0 0 32px rgba(0, 0, 0, 0.9); }
