@@ -994,7 +994,7 @@ body.modal-open {
 #cred .name-title {
   color: #374151; }
 
-#cred .inline-red {
+#cred .inline-firm-color {
   padding: 2px;
   border-bottom: 4px solid #9b0e15; }
 
@@ -1009,14 +1009,6 @@ body.modal-open {
 
 .inline {
   justify-content: flex-start; }
-
-#cred .inline-gray {
-  padding: 2px;
-  border-bottom: 4px solid #595f72; }
-
-#cred .inline-orange {
-  padding: 2px;
-  border-bottom: 4px solid #ef7b45; }
 
 #cred .cred-details {
   color: #374151; }
