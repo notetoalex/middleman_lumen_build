@@ -884,6 +884,9 @@ body.modal-open {
   justify-items: center;
   align-items: center; }
 
+#pp .two-col-header, #dd .two-col-header, #lc .two-col-header {
+  justify-items: center; }
+
 #pp {
   background-color: #f1f5f9; }
 
