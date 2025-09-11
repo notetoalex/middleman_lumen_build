@@ -390,6 +390,9 @@ a {
 #ser h4, #am h4, #cl h4 {
   color: #9b0e15; }
 
+#contact h4 {
+  color: white; }
+
 #ser h5, #am h5, #cl h5 {
   color: #6b7280; }
 
@@ -789,12 +792,18 @@ Make all .box-card columns equal width and height
 
 .image-service {
   display: flex;
-  justify-content: center;
+  justify-items: center;
   align-items: center;
+  justify-content: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
   overflow: hidden;
   border-radius: 8px;
   -webkit-box-shadow: 0 0 32px rgba(0, 0, 0, 0.9);
-          box-shadow: 0 0 32px rgba(0, 0, 0, 0.9); }
+          box-shadow: 0 0 32px rgba(0, 0, 0, 0.9);
+  width: 90%;
+  height: 90%;
+  align-items: center; }
 
 .image-service img {
   width: 100%;
