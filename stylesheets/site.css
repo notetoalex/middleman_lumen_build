@@ -1397,7 +1397,7 @@ input:focus, select:focus, textarea:focus {
   /* This is necessary to enable multi-column layout */
   text-decoration: none;
   outline: none;
-  border: .25px solid black;
+  /* border: .25px solid black; */
   /* This is just for debugging, remove in production */ }
 
 h1, h2, h3, h4, h5, h6 {
