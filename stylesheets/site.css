@@ -718,17 +718,13 @@ Make all .box-card columns equal width and height
   width: 2.7rem;
   height: auto; }
 
-#headshot-image-box {
+#headshot-image-box, #avatar {
   display: flex;
   -ms-grid-column-align: center;
       justify-self: center; }
 
 #am a {
   justify-content: center; }
-
-#headshot, #avatar {
-  display: flex;
-  justify-items: center; }
 
 #am .transparent {
   position: absolute;
@@ -767,13 +763,14 @@ Make all .box-card columns equal width and height
   -webkit-tap-highlight-color: rgba(255, 255, 255, 0); }
 
 #cred .mhs1 {
-  width: fit-content;
+  max-width: 75%;
+  height: auto;
   border-radius: 50%;
   -webkit-box-shadow: 0 0 32px rgba(0, 0, 0, 0.9);
           box-shadow: 0 0 32px rgba(0, 0, 0, 0.9);
   display: flex;
-  -ms-grid-column-align: center;
-      justify-self: center;
+  position: relative;
+  margin: auto;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -1390,7 +1387,9 @@ input:focus, select:focus, textarea:focus {
           box-sizing: border-box;
   /* This is necessary to enable multi-column layout */
   text-decoration: none;
-  outline: none; }
+  outline: none;
+  border: .25px solid black;
+  /* This is just for debugging, remove in production */ }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Merriweather', serif; }
