@@ -16,11 +16,33 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <!-- For Fontshare -->
+    <!-- To prevent search engines from indexing images on the website-->
+    <meta name="robots" content="noimageindex">
     <!-- disable iOS phone number detection and changing font color -->
     <!-- <meta name="format-detection" content="telephone=no"> -->
+    <script>
+      // document.addEventListener('contextmenu',function(e){e.preventDefault();e.stopPropagation();});
+      // document.addEventListener('copy',function(e){e.preventDefault();e.stopPropagation();});
+      // document.addEventListener('cut',function(e){e.preventDefault();e.stopPropagation();});
+    </script>
   </head>
   <body>
-    <div class="navbar">
+    <div id="popup-consent" class="hidden">
+  <div class="container-custom">
+    <div class="">
+      <button onclick="acceptConsent()" id="accept-consent" class="button-w-icon-popup-close">
+        <img class="icon-lg" src="/middleman_lumen_build/images/xmark-solid-full-black.svg" alt="">
+        Close</button>
+      <div class="consent-text">
+        <span>
+          This website uses cookies to collect anonymous user data to improve the website's functionality and performance. By using this website, you consent to the use of such cookies and agree to the terms of the <a onclick="openModal('modal-privacy')" href="#" class="privacy-link">Privacy Notice</a>.
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="navbar">
   <div class="container-custom">
     <div class="navbar-flexbox">
       <a class="navbar-brand-link" href="/middleman_lumen_build/">
@@ -59,8 +81,10 @@
 <div id="cred" class="about section-break">
   <div class="container-custom">
     <div class="two-col-row boxes-two">
-      <div id="avatar"class="box box-l">
+      <div id="avatar"class="box box-l" style="position: relative; display: inline-block;">
         <img class="mhs1" src="/middleman_lumen_build/images/mhs1.jpg" alt="">
+        <img src="/middleman_lumen_build/images/transparent.png" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none;"
+       alt="">
       </div>
       <div class="box box-r">
         <div class="name-title">

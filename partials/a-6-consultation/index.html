@@ -1,0 +1,162 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+    <!-- Use the title from a page's frontmatter if it has one -->
+    <title>Lumen IP Law</title>
+    <link href="/stylesheets/site.css" rel="stylesheet" />
+    <script src="/javascripts/site.js"></script>
+    <!-- For Font Awesome css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" />
+    <!-- For Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- For Fontshare -->
+    <!-- To prevent search engines from indexing images on the website-->
+    <meta name="robots" content="noimageindex">
+    <!-- disable iOS phone number detection and changing font color -->
+    <!-- <meta name="format-detection" content="telephone=no"> -->
+    <script>
+      // document.addEventListener('contextmenu',function(e){e.preventDefault();e.stopPropagation();});
+      // document.addEventListener('copy',function(e){e.preventDefault();e.stopPropagation();});
+      // document.addEventListener('cut',function(e){e.preventDefault();e.stopPropagation();});
+    </script>
+  </head>
+  <body>
+    <div id="contact"class="footer section-break">
+  <div class="container-custom">
+    <h4>Let's Connect!</h4>
+    <br>
+    <div class="grid-footer">
+      <div class="l-side">
+        <div class="contact-form">
+          <form action="/submit-form" method="POST">
+            <div class="upper">
+              <div class="form-group-narrow">
+                <label for="fname">FIRST NAME</label>
+                <input autocomplete="given-name" class="form__input" type="text" id="fname" name="firstname" placeholder="Your first name" required>
+              </div>
+              <div class="form-group-narrow">
+                <label for="lname">LAST NAME</label>
+                <input autocomplete="family-name" type="text" id="lname" name="lastname" placeholder="Your last name" required>
+              </div>
+              <div class="form-group-narrow">
+                <!-- company or affiliation -->
+                <label for="company">COMPANY</label>
+                <input autocomplete="organization" type="text" id="company" name="company" placeholder="Your company or affiliation" required>
+              </div>
+              <div class="form-group-narrow">
+                <!-- phone -->
+                <label for="phone">PHONE</label>
+                <input autocomplete="tel" type="tel" id="phone" name="phone" placeholder="(XXX) XXX-XXXX" required>
+              </div>
+              <div class="form-group-narrow">
+                <!-- email -- THIS TRIGGERS AN ERROR IN WIDTHS FOR MOBILE LAYOUT-->
+                <label for="email">EMAIL</label>
+                <input autocomplete="email" type="email" id="email" name="email" placeholder="Your email address" required>
+              </div>
+              <div class="form-group-narrow">
+                <!-- how did you hear about us? -->
+                <label for="referral">HOW DID YOU HEAR ABOUT US?</label>
+                <select id="referral" name="referral">
+                  <option value=""></option>
+                  <option value="search">Internet Search</option>
+                  <option value="friend">Friend/Colleague</option>
+                  <option value="social_media">Social Media</option>
+                  <option value="advertising">Advertising</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+              <div class="form-group-narrow">
+                <!-- interest check box -->
+                <fieldset>
+                  <legend>SERVICE(S) OF INTEREST</legend>
+                  <div class="inline">
+                    <input type="checkbox" id="interest1" name="interest" value="patpros">
+                    <label for="interest1">Patent Prosecution</label>
+                  </div>
+                  <div class="inline">
+                    <input type="checkbox" id="interest2" name="interest" value="duedil">
+                    <label for="interest2">Due Diligence</label>
+                  </div>
+                  <div class="inline">
+                    <input type="checkbox" id="interest3" name="interest" value="iplit">
+                    <label for="interest3">IP Litigation Consulting</label>
+                  </div>
+                  <div class="inline">
+                    <input type="checkbox" id="interest4" name="interest" value="other">
+                    <label for="interest4">Other (Please explain in message)</label>
+                  </div>
+                </fieldset>
+              </div>
+              <div class="form-group-narrow">
+                <!-- Best time to reach -->
+                <fieldset>
+                  <legend>BEST TIME TO BE REACHED (PACIFIC TIME)</legend>
+                  <div class="inline">
+                    <input type="radio" id="timeBusiness" name="bestTime" value="evening">
+                    <label for="timeBusiness">Normal Business Hours</label>
+                  </div>
+                  <div class="inline">
+                    <input type="radio" id="timeMorning" name="bestTime" value="morning">
+                    <label for="timeMorning">Mornings</label>
+                  </div>
+                  <div class="inline">
+                    <input type="radio" id="timeAfternoon" name="bestTime" value="afternoon">
+                    <label for="timeAfternoon">Afternoons</label>
+                  </div>
+                  <div class="inline">
+                    <input type="radio" id="timeEvening" name="bestTime" value="evening">
+                    <label for="timeEvening">Evenings</label>
+                  </div>
+                </fieldset>
+              </div>
+            </div>
+            <div class="lower">
+              <div class="form-group-wide">
+                <div class="char-count-container">
+                  <!-- message area -->
+                  <label for="message">Please provide a brief message about your inquiry (DO NOT include confidential or sensitive information):</label>
+                  <textarea
+                    id="message"
+                    maxlength="200"
+                    rows="4"
+                    placeholder="Type here (200-character limit)" required></textarea>
+                  <!-- Clear button -- SHOULD REMOVE BEFORE PUBLISHING -->
+                  <div class="counter-display">
+                    <div><span id="char-counter">200</span> characters remaining</div>
+                    <button id="button-reset-form" class="button-w-icon" type="reset" value="Reset Form">
+                      <img class="icon-lg" src="/images/trash-can-solid-full.svg" alt="">Clear Form</button>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group-wide">
+                <div class="inline agreement">
+                  <!-- checkbox for terms and conditions -->
+                  <input type="checkbox" id="agree" name="agree" maxlength="10" required>
+                  <label for="agree">
+                    I accept the terms of the <strong>Legal Disclaimer</strong> and the <strong>Privacy Notice</strong>.
+                  </label>
+                </div>
+              </div>
+              <div class="form-group-wide">
+                <button id="button-submit-form"class="button-w-icon" type="submit">
+                  <img class="icon-lg" src="/images/paper-plane-solid-full.svg" alt="">Send Message</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  </body>
+  <!-- Your own JavaScript file -->
+  <!-- defer means to wait for the website to load -->
+  <script src="./javascript/site.js" defer></script>
+</html>

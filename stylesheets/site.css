@@ -718,32 +718,90 @@ Make all .box-card columns equal width and height
   width: 2.7rem;
   height: auto; }
 
-.image-two-col {
-  color: #4169e1; }
+#headshot-image-box {
+  display: flex;
+  -ms-grid-column-align: center;
+      justify-self: center; }
 
 #am a {
   justify-content: center; }
 
-#headshot {
+#headshot, #avatar {
   display: flex;
-  justify-content: center;
-  align-items: center; }
+  justify-items: center; }
+
+#am .transparent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  z-index: 100; }
 
 #am .mhs2 {
   width: 60%;
   border-radius: 8px;
   -webkit-box-shadow: 0 0 32px rgba(0, 0, 0, 0.9);
-          box-shadow: 0 0 32px rgba(0, 0, 0, 0.9); }
-
-#avatar {
+          box-shadow: 0 0 32px rgba(0, 0, 0, 0.9);
   display: flex;
-  justify-content: center; }
+  -ms-grid-column-align: center;
+      justify-self: center;
+  position: relative;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  pointer-events: none;
+  -webkit-user-drag: none;
+  /* For Chrome, Safari, Opera */
+  -moz-user-drag: none;
+  /* For Firefox */
+  -ms-user-drag: none;
+  /* For Internet Explorer/Edge */
+  user-drag: none;
+  /* Standard property */
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0); }
 
 #cred .mhs1 {
   size: 50%;
   border-radius: 50%;
   -webkit-box-shadow: 0 0 32px rgba(0, 0, 0, 0.9);
+          box-shadow: 0 0 32px rgba(0, 0, 0, 0.9);
+  display: flex;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  pointer-events: none;
+  -webkit-user-drag: none;
+  /* For Chrome, Safari, Opera */
+  -moz-user-drag: none;
+  /* For Firefox */
+  -ms-user-drag: none;
+  /* For Internet Explorer/Edge */
+  user-drag: none;
+  /* Standard property */
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0); }
+
+.image-service {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 8px;
+  -webkit-box-shadow: 0 0 32px rgba(0, 0, 0, 0.9);
           box-shadow: 0 0 32px rgba(0, 0, 0, 0.9); }
+
+.image-service img {
+  width: 100%;
+  height: auto; }
 
 .modal {
   /* modals are hidden by default */
@@ -1190,6 +1248,130 @@ input:focus, select:focus, textarea:focus {
 
 .form-group-wide {
   padding-bottom: 6px; }
+
+#schedule {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-blend-mode: multiply; }
+
+.schedule-form {
+  display: -ms-grid;
+  display: grid;
+  background-color: white;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+  background-color: #0891b2;
+  color: white; }
+  .schedule-form #contact .l-side {
+    padding: 8px;
+    color: white;
+    max-width: 600px;
+    /* Limits the form's width to a maximum of 720px */
+    margin: 0 auto;
+    /* Centers the form horizontally */ }
+  .schedule-form .contact-form {
+    background-color: white;
+    color: white; }
+  .schedule-form .form-group-narrow {
+    display: -ms-grid;
+    display: grid; }
+  .schedule-form .form-group-wide {
+    display: -ms-grid;
+    display: grid; }
+  .schedule-form .counter-display {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: smaller; }
+  .schedule-form textarea {
+    width: 100%;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    /* ensures padding/border don't overflow */
+    padding-bottom: 0; }
+  .schedule-form .counter-display .danger {
+    color: red; }
+  .schedule-form input, .schedule-form button, .schedule-form select, .schedule-form textarea {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    margin: 0;
+    /* Remove default margin in Firefox and Safari */ }
+  .schedule-form .inline {
+    display: flex;
+    align-items: center;
+    gap: 1ch;
+    padding: 4px o; }
+  .schedule-form .icon-plus-text {
+    display: flex;
+    align-items: center;
+    gap: 1ch; }
+
+label, legend, fieldset {
+  text-box-trim: trim-both;
+  text-box-edge: cap alphabetic;
+  font-size: small;
+  line-height: 1.25; }
+
+input:focus, select:focus, textarea:focus {
+  border: 4px solid #ef7b45;
+  border-radius: 8px;
+  -webkit-transition: border-color 0.2s ease-in-out;
+  transition: border-color 0.2s ease-in-out; }
+
+.agreement {
+  background-color: black;
+  color: white;
+  padding: 24px; }
+
+.form-group-wide {
+  padding-bottom: 6px; }
+
+.calendar-wrapper header {
+  display: flex;
+  align-items: center;
+  font-size: calc(16px + (26 - 16) * ((100vw - 300px) / (1600 - 300)));
+  justify-content: center;
+  margin-bottom: 2em;
+  background: #000;
+  color: #fff;
+  min-height: 10vh;
+  text-align: center; }
+
+.calendar-wrapper ul, .calendar-wrapper ol {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[7];
+  grid-template-columns: repeat(7, 1fr);
+  grid-gap: 1em;
+  margin: 0 auto;
+  max-width: 64em;
+  padding: 0; }
+
+.calendar-wrapper li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  margin-left: 0;
+  font-size: calc(16px + (21 - 16) * ((100vw - 300px) / (1600 - 300))); }
+
+.calendar-wrapper ul.weekdays {
+  margin-bottom: 1em; }
+
+.calendar-wrapper ul.weekdays li {
+  height: 4vw; }
+
+.calendar-wrapper ol.day-grid li {
+  background-color: #eaeaea;
+  border: 1px solid #eaeaea;
+  height: 12vw;
+  max-height: 125px; }
+
+.calendar-wrapper ul.weekdays abbr[title] {
+  border: none;
+  font-weight: 800;
+  text-decoration: none; }
 
 .fine-print {
   justify-items: center; }

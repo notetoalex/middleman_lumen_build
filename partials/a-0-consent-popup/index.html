@@ -27,26 +27,20 @@
     </script>
   </head>
   <body>
-    <div id="am" class="section-break">
+    <div id="popup-consent" class="hidden">
   <div class="container-custom">
-    <div class="two-col-row">
-      <div class="box box-l">
-        <h4>About Lumen IP Law</h4>
-        <p><br>
-          Lumen IP Law is a solo practice founded by Alexander Lee, J.D., Ph.D., an attorney licensed to practice law in California, New York, and Texas, as well as before the United States Patent and Trademark Office.</p>
-        <p>Prior to founding Lumen IP Law, Mr. Lee worked at several prominent law firms where he honed his skills in intellectual property law. Having worked in both patent prosecution and litigation, he brings a well-rounded perspective to his practice.</p>
-      </div>
-      <div id="headshot-image-box" class="box box-r">
-        <a href="/about">
-          <div id="headshot" style="position: relative; display: inline-block;">
-            <img class="mhs2 box-card" src="/images/mhs2.jpg" alt="">
-            <img src="/images/transparent.png" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none;"
-       alt="">
-          </a>
-        </div>
+    <div class="">
+      <button onclick="acceptConsent()" id="accept-consent" class="button-w-icon-popup-close">
+        <img class="icon-lg" src="images/xmark-solid-full-black.svg" alt="">
+        Close</button>
+      <div class="consent-text">
+        <span>
+          This website uses cookies to collect anonymous user data to improve the website's functionality and performance. By using this website, you consent to the use of such cookies and agree to the terms of the <a onclick="openModal('modal-privacy')" href="#" class="privacy-link">Privacy Notice</a>.
+        </span>
       </div>
     </div>
   </div>
+</div>
 
   </body>
   <!-- Your own JavaScript file -->

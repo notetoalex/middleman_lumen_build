@@ -16,11 +16,33 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <!-- For Fontshare -->
+    <!-- To prevent search engines from indexing images on the website-->
+    <meta name="robots" content="noimageindex">
     <!-- disable iOS phone number detection and changing font color -->
     <!-- <meta name="format-detection" content="telephone=no"> -->
+    <script>
+      // document.addEventListener('contextmenu',function(e){e.preventDefault();e.stopPropagation();});
+      // document.addEventListener('copy',function(e){e.preventDefault();e.stopPropagation();});
+      // document.addEventListener('cut',function(e){e.preventDefault();e.stopPropagation();});
+    </script>
   </head>
   <body>
-    <div class="navbar">
+    <div id="popup-consent" class="hidden">
+  <div class="container-custom">
+    <div class="">
+      <button onclick="acceptConsent()" id="accept-consent" class="button-w-icon-popup-close">
+        <img class="icon-lg" src="/middleman_lumen_build/images/xmark-solid-full-black.svg" alt="">
+        Close</button>
+      <div class="consent-text">
+        <span>
+          This website uses cookies to collect anonymous user data to improve the website's functionality and performance. By using this website, you consent to the use of such cookies and agree to the terms of the <a onclick="openModal('modal-privacy')" href="#" class="privacy-link">Privacy Notice</a>.
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="navbar">
   <div class="container-custom">
     <div class="navbar-flexbox">
       <a class="navbar-brand-link" href="/middleman_lumen_build/">
@@ -89,7 +111,8 @@
         <div class="box-card box-card-l">
           <a href="/middleman_lumen_build/services#pp-link">
             <div id="card-pp" class="card-product">
-              <img class="icon-2xl" src="/middleman_lumen_build/images/award-solid-full.svg" alt="">
+              <img class="icon-2xl" src="/middleman_lumen_build/images/lightbulb-solid-full.svg" alt="">
+              <i class="fa-solid fa-lightbulb fa-2xl" style="color: #2563eb;"></i>
               <div class="card-product-infos">
                 <h5>Patent Procurement</h5>
                 <p>Commonly referred to as <strong>Patent Prosecution</strong></p>
@@ -133,16 +156,17 @@
           Lumen IP Law is a solo practice founded by Alexander Lee, J.D., Ph.D., an attorney licensed to practice law in California, New York, and Texas, as well as before the United States Patent and Trademark Office.</p>
         <p>Prior to founding Lumen IP Law, Mr. Lee worked at several prominent law firms where he honed his skills in intellectual property law. Having worked in both patent prosecution and litigation, he brings a well-rounded perspective to his practice.</p>
       </div>
-      <div  class="box box-r">
+      <div id="headshot-image-box" class="box box-r">
         <a href="/middleman_lumen_build/about">
-          <div id="headshot">
+          <div id="headshot" style="position: relative; display: inline-block;">
             <img class="mhs2 box-card" src="/middleman_lumen_build/images/mhs2.jpg" alt="">
-          </div>
-        </a>
+            <img src="/middleman_lumen_build/images/transparent.png" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none;"
+       alt="">
+          </a>
+        </div>
       </div>
     </div>
   </div>
-</div>
 
 <div id="cl" class="section-break">
   <div class="container-custom">
@@ -507,5 +531,5 @@
   </body>
   <!-- Your own JavaScript file -->
   <!-- defer means to wait for the website to load -->
-  <script src="./middleman_lumen_build/javascript/site.js" defer></script>
+  <script src="./javascript/site.js" defer></script>
 </html>
