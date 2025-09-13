@@ -755,7 +755,6 @@ Make all .box-card columns equal width and height
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  /* pointer-events: none; */
   -webkit-user-drag: none;
   /* For Chrome, Safari, Opera */
   -moz-user-drag: none;
@@ -803,8 +802,8 @@ Make all .box-card columns equal width and height
   -webkit-box-shadow: 0 0 32px rgba(0, 0, 0, 0.9);
           box-shadow: 0 0 32px rgba(0, 0, 0, 0.9);
   width: 90%;
-  height: auto;
-  align-items: center; }
+  align-items: center;
+  height: auto; }
 
 .image-service img {
   width: 100%;
