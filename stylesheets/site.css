@@ -722,7 +722,8 @@ Make all .box-card columns equal width and height
   height: auto; }
 
 #headshot-image-box, #avatar {
-  display: flex;
+  display: -ms-grid;
+  display: grid;
   -ms-grid-column-align: center;
       justify-self: center; }
 
