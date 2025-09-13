@@ -725,7 +725,8 @@ Make all .box-card columns equal width and height
   display: -ms-grid;
   display: grid;
   -ms-grid-column-align: center;
-      justify-self: center; }
+      justify-self: center;
+  justify-items: center; }
 
 #am a {
   justify-content: center; }
@@ -742,14 +743,13 @@ Make all .box-card columns equal width and height
   z-index: 100; }
 
 #am .mhs2 {
-  width: 60%;
+  width: 75%;
   border-radius: 8px;
   -webkit-box-shadow: 0 0 32px rgba(0, 0, 0, 0.9);
           box-shadow: 0 0 32px rgba(0, 0, 0, 0.9);
   display: flex;
-  -ms-grid-column-align: center;
-      justify-self: center;
   position: relative;
+  margin: auto;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -moz-user-select: none;
