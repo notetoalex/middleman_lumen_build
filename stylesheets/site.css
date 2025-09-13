@@ -284,7 +284,7 @@ nav a.accent-link {
   display: none;
   background: none;
   border: none;
-  padding: 0;
+  padding: 3px 2px;
   align-items: center;
   cursor: pointer; }
 
@@ -321,8 +321,7 @@ nav a.accent-link {
     z-index: 10;
     -webkit-transition: left 0.3s ease-in-out;
     transition: left 0.3s ease-in-out;
-    background-color: black;
-    padding: 3px 3px; }
+    background-color: black; }
   #sidebar-menu.open {
     -webkit-transform: translateX(100%);
             transform: translateX(100%);
