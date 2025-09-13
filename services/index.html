@@ -9,6 +9,8 @@
     <title>Lumen IP Law</title>
     <link href="/middleman_lumen_build/stylesheets/site.css" rel="stylesheet" />
     <script src="/middleman_lumen_build/javascripts/site.js"></script>
+    <!-- favicon -->
+    <link rel="icon" type="image/svg" href="/middleman_lumen_build/images/Lumen_RedIcon.svg">
     <!-- For Font Awesome css -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" />
     <!-- For Google Fonts -->
@@ -21,9 +23,9 @@
     <!-- disable iOS phone number detection and changing font color -->
     <!-- <meta name="format-detection" content="telephone=no"> -->
     <script>
-      // document.addEventListener('contextmenu',function(e){e.preventDefault();e.stopPropagation();});
-      // document.addEventListener('copy',function(e){e.preventDefault();e.stopPropagation();});
-      // document.addEventListener('cut',function(e){e.preventDefault();e.stopPropagation();});
+      document.addEventListener('contextmenu',function(e){e.preventDefault();e.stopPropagation();});
+      document.addEventListener('copy',function(e){e.preventDefault();e.stopPropagation();});
+      document.addEventListener('cut',function(e){e.preventDefault();e.stopPropagation();});
     </script>
   </head>
   <body>
@@ -48,18 +50,17 @@
       <a class="navbar-brand-link" href="/middleman_lumen_build/">
         <img class="navbar-brand" src="/middleman_lumen_build/images/Lumen_RedLogo.svg" alt="">
       </a>
-      <button id="open-sidebar-button" onclick="openSidebar()" aria-label="Open sidebar" aria-expanded="false" aria-controls="navbar"><img class="icon-xl" src="/middleman_lumen_build/images/bars-solid-full.svg" alt="">
+      <button id="open-sidebar-button" onclick="openSidebar()" aria-label="Open sidebar" aria-expanded="false" aria-controls="navbar"><i class="fa-solid fa-bars fa-xl" style="color: #000000;"></i>
       </button>
       <nav id="sidebar-menu">
         <ul>
           <li class="justify-end"><button id="close-sidebar-button" onclick="closeSidebar()" aria-label="Close sidebar">
-              <!-- <img class="icon-lg" src="images/xmark-solid-full-black.svg" alt=""> -->
-              <i class="fa-solid fa-xmark fa-lg" style="color: #ffffff;"></i>
+              <i class="fa-solid fa-xmark fa-xl" style="color: #ffffff;"></i>
             </button></li>
           <li class="justify-left"><a class="button-nav" href="/middleman_lumen_build/">Home</a></li>
           <li class="justify-left"><a class="button-nav" href="/middleman_lumen_build/services">Services</a></li>
           <li class="justify-left"><a class="button-nav" href="/middleman_lumen_build/about">About</a></li>
-          <li class="justify-center"><button><a class="button-contact" href="/middleman_lumen_build/#form">Contact</a></button></li>
+          <li class="justify-center"><button><a class="button-contact" href="/middleman_lumen_build/#ft">Contact</a></button></li>
         </ul>
       </nav>
     </div>
@@ -200,18 +201,6 @@
           <li>Damages analysis and royalty calculations</li>
           <li>Assist with <em>Inter Partes</em> Review efforts</li>
         </ul>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="outro">
-  <div class="container-custom">
-    <div class="two-col-row">
-      <div class="box box-l">
-        <h4>Would you like to learn more about Lumen IP Law's services?</h4>
-      </div>
-      <div class="box box-r">
-        <button><a class="button-contact" href="/middleman_lumen_build/#form">Schedule a Consultation</a></button>
       </div>
     </div>
   </div>

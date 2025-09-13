@@ -9,6 +9,8 @@
     <title>Lumen IP Law</title>
     <link href="/stylesheets/site.css" rel="stylesheet" />
     <script src="/javascripts/site.js"></script>
+    <!-- favicon -->
+    <link rel="icon" type="image/svg" href="/images/Lumen_RedIcon.svg">
     <!-- For Font Awesome css -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" />
     <!-- For Google Fonts -->
@@ -21,9 +23,9 @@
     <!-- disable iOS phone number detection and changing font color -->
     <!-- <meta name="format-detection" content="telephone=no"> -->
     <script>
-      // document.addEventListener('contextmenu',function(e){e.preventDefault();e.stopPropagation();});
-      // document.addEventListener('copy',function(e){e.preventDefault();e.stopPropagation();});
-      // document.addEventListener('cut',function(e){e.preventDefault();e.stopPropagation();});
+      document.addEventListener('contextmenu',function(e){e.preventDefault();e.stopPropagation();});
+      document.addEventListener('copy',function(e){e.preventDefault();e.stopPropagation();});
+      document.addEventListener('cut',function(e){e.preventDefault();e.stopPropagation();});
     </script>
   </head>
   <body>
@@ -31,114 +33,76 @@
   <div class="container-custom">
     <h4>Let's Connect!</h4>
     <div class="two-col-row boxes-two">
-      <div class="box box-l">
-        <div class="grid-footer">
-          <div class="l-side">
-            <div class="contact-form">
-              <form action="/submit-form" method="POST">
-                <div class="upper">
-                  <div class="form-group-narrow">
-                    <label for="fname">FIRST NAME</label>
-                    <input autocomplete="given-name" class="form__input" type="text" id="fname" name="firstname" placeholder="Your first name" required>
-                  </div>
-                  <div class="form-group-narrow">
-                    <label for="lname">LAST NAME</label>
-                    <input autocomplete="family-name" type="text" id="lname" name="lastname" placeholder="Your last name" required>
-                  </div>
-                  <div class="form-group-narrow">
-                    <!-- company or affiliation -->
-                    <label for="company">COMPANY</label>
-                    <input autocomplete="organization" type="text" id="company" name="company" placeholder="Your company or affiliation" required>
-                  </div>
-                  <div class="form-group-narrow">
-                    <!-- phone -->
-                    <label for="phone">PHONE</label>
-                    <input autocomplete="tel" type="tel" id="phone" name="phone" placeholder="(XXX) XXX-XXXX" required>
-                  </div>
-                  <div class="form-group-narrow">
-                    <!-- email -- THIS TRIGGERS AN ERROR IN WIDTHS FOR MOBILE LAYOUT-->
-                    <label for="email">EMAIL</label>
-                    <input autocomplete="email" type="email" id="email" name="email" placeholder="Your email address" required>
-                  </div>
-                  <div class="form-group-narrow">
-                    <!-- how did you hear about us? -->
-                    <label for="referral">HOW DID YOU HEAR ABOUT US?</label>
-                    <select id="referral" name="referral">
-                      <option value=""></option>
-                      <option value="search">Internet Search</option>
-                      <option value="friend">Friend/Colleague</option>
-                      <option value="social_media">Social Media</option>
-                      <option value="advertising">Advertising</option>
-                      <option value="other">Other</option>
-                    </select>
-                  </div>
-                  <div class="form-group-wide">
-                    <div class="inline agreement">
-                      <!-- checkbox for terms and conditions -->
-                      <input type="checkbox" id="agree" name="agree" maxlength="10" required>
-                      <label for="agree">
-                        I accept the terms of the <strong>Legal Disclaimer</strong> and the <strong>Privacy Notice</strong>.
-                      </label>
+      <div class="microsoft-bookings-embed">
+        <iframe src='https://outlook.office.com/book/LumenIntellectualPropertyLaw1@lumeniplaw.com/?ismsaljsauthenabled' width='100%' height='100%' scrolling='yes' style='border:0'></iframe>
+        <div class="box box-l">
+          <div class="grid-footer">
+            <div class="l-side">
+              <div class="contact-form">
+                <form action="/submit-form" method="POST">
+                  <div class="upper">
+                    <div class="form-group-narrow">
+                      <label for="fname">FIRST NAME</label>
+                      <input autocomplete="given-name" class="form__input" type="text" id="fname" name="firstname" placeholder="Your first name" required>
+                    </div>
+                    <div class="form-group-narrow">
+                      <label for="lname">LAST NAME</label>
+                      <input autocomplete="family-name" type="text" id="lname" name="lastname" placeholder="Your last name" required>
+                    </div>
+                    <div class="form-group-narrow">
+                      <!-- company or affiliation -->
+                      <label for="company">AFFILIATION</label>
+                      <input autocomplete="organization" type="text" id="affiliation" name="affiliation" placeholder="Your company or organization" required>
+                    </div>
+                    <div class="form-group-narrow">
+                      <!-- phone -->
+                      <label for="phone">PHONE</label>
+                      <input autocomplete="tel" type="tel" id="phone" name="phone" placeholder="(XXX) XXX-XXXX" required>
+                    </div>
+                    <div class="form-group-narrow">
+                      <!-- email -- THIS TRIGGERS AN ERROR IN WIDTHS FOR MOBILE LAYOUT-->
+                      <label for="email">EMAIL</label>
+                      <input autocomplete="email" type="email" id="email" name="email" placeholder="Your email address" required>
+                    </div>
+                    <div class="form-group-narrow">
+                      <!-- how did you hear about us? -->
+                      <label for="referral">HOW DID YOU HEAR ABOUT US?</label>
+                      <select id="referral" name="referral">
+                        <option value=""></option>
+                        <option value="search">Internet Search</option>
+                        <option value="friend">Friend/Colleague</option>
+                        <option value="social_media">Social Media</option>
+                        <option value="advertising">Advertising</option>
+                        <option value="other">Other</option>
+                      </select>
+                    </div>
+                    <div class="form-group-wide">
+                      <div class="inline agreement">
+                        <!-- checkbox for terms and conditions -->
+                        <input type="checkbox" id="agree" name="agree" maxlength="10" required>
+                        <label for="agree">
+                          I accept the terms of the <strong>Legal Disclaimer</strong> and the <strong>Privacy Notice</strong>.
+                        </label>
+                      </div>
+                    </div>
+                    <div class="form-group-wide">
+                      <button id="button-submit-form"class="button-w-icon" type="submit">
+                        <img class="icon-lg" src="/images/paper-plane-solid-full.svg" alt="">Send Message</button>
                     </div>
                   </div>
-                  <div class="form-group-wide">
-                    <button id="button-submit-form"class="button-w-icon" type="submit">
-                      <img class="icon-lg" src="/images/paper-plane-solid-full.svg" alt="">Send Message</button>
-                  </div>
-                </div>
-              </form>
+                </form>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="box box-r">
-        <div class="calendar-wrapper">
-          <h1>Septemper 2025</h1>
-          <ol class="calendar">
-            <li class="day-name">Sun</li>
-            <li class="day-name">Mon</li>
-            <li class="day-name">Tue</li>
-            <li class="day-name">Wed</li>
-            <li class="day-name">Thu</li>
-            <li class="day-name">Fri</li>
-            <li class="day-name">Sat</li>
-            <li class="first-day">1</li>
-            <li>2</li>
-            <li>3</li>
-            <li>4</li>
-            <li>5</li>
-            <li>6</li>
-            <li>7</li>
-            <li>8</li>
-            <li>9</li>
-            <li>10</li>
-            <li>11</li>
-            <li>12</li>
-            <li>13</li>
-            <li>14</li>
-            <li>15</li>
-            <li>16</li>
-            <li>17</li>
-            <li>18</li>
-            <li>19</li>
-            <li>20</li>
-            <li>21</li>
-            <li>22</li>
-            <li>23</li>
-            <li>24</li>
-            <li>25</li>
-            <li>26</li>
-            <li>27</li>
-            <li>28</li>
-            <li>29</li>
-            <li>30</li>
-            <li>31</li>
-          </ol>
+        <div class="box box-r">
+          <div class="microsoft-bookings-embed">
+            <iframe src='https://outlook.office.com/book/LumenIntellectualPropertyLaw1@lumeniplaw.com/?ismsaljsauthenabled' width='100%' height='100%' scrolling='yes' style='border:0'></iframe>
+          </div>
         </div>
       </div>
     </div>
   </div>
-</div>
 
   </body>
   <!-- Your own JavaScript file -->

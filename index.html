@@ -9,6 +9,8 @@
     <title>Lumen IP Law</title>
     <link href="/middleman_lumen_build/stylesheets/site.css" rel="stylesheet" />
     <script src="/middleman_lumen_build/javascripts/site.js"></script>
+    <!-- favicon -->
+    <link rel="icon" type="image/svg" href="/middleman_lumen_build/images/Lumen_RedIcon.svg">
     <!-- For Font Awesome css -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" />
     <!-- For Google Fonts -->
@@ -21,9 +23,9 @@
     <!-- disable iOS phone number detection and changing font color -->
     <!-- <meta name="format-detection" content="telephone=no"> -->
     <script>
-      // document.addEventListener('contextmenu',function(e){e.preventDefault();e.stopPropagation();});
-      // document.addEventListener('copy',function(e){e.preventDefault();e.stopPropagation();});
-      // document.addEventListener('cut',function(e){e.preventDefault();e.stopPropagation();});
+      document.addEventListener('contextmenu',function(e){e.preventDefault();e.stopPropagation();});
+      document.addEventListener('copy',function(e){e.preventDefault();e.stopPropagation();});
+      document.addEventListener('cut',function(e){e.preventDefault();e.stopPropagation();});
     </script>
   </head>
   <body>
@@ -48,18 +50,17 @@
       <a class="navbar-brand-link" href="/middleman_lumen_build/">
         <img class="navbar-brand" src="/middleman_lumen_build/images/Lumen_RedLogo.svg" alt="">
       </a>
-      <button id="open-sidebar-button" onclick="openSidebar()" aria-label="Open sidebar" aria-expanded="false" aria-controls="navbar"><img class="icon-xl" src="/middleman_lumen_build/images/bars-solid-full.svg" alt="">
+      <button id="open-sidebar-button" onclick="openSidebar()" aria-label="Open sidebar" aria-expanded="false" aria-controls="navbar"><i class="fa-solid fa-bars fa-xl" style="color: #000000;"></i>
       </button>
       <nav id="sidebar-menu">
         <ul>
           <li class="justify-end"><button id="close-sidebar-button" onclick="closeSidebar()" aria-label="Close sidebar">
-              <!-- <img class="icon-lg" src="images/xmark-solid-full-black.svg" alt=""> -->
-              <i class="fa-solid fa-xmark fa-lg" style="color: #ffffff;"></i>
+              <i class="fa-solid fa-xmark fa-xl" style="color: #ffffff;"></i>
             </button></li>
           <li class="justify-left"><a class="button-nav" href="/middleman_lumen_build/">Home</a></li>
           <li class="justify-left"><a class="button-nav" href="/middleman_lumen_build/services">Services</a></li>
           <li class="justify-left"><a class="button-nav" href="/middleman_lumen_build/about">About</a></li>
-          <li class="justify-center"><button><a class="button-contact" href="/middleman_lumen_build/#form">Contact</a></button></li>
+          <li class="justify-center"><button><a class="button-contact" href="/middleman_lumen_build/#ft">Contact</a></button></li>
         </ul>
       </nav>
     </div>
@@ -86,7 +87,6 @@
         <h1>Protecting Innovation for Growing Businesses</h1>
         <p>Startups and small businesses have unique IP needs and constraints. Lumen IP offers <em><strong>flexible engagement models</strong></em> that work with your budget and timeline for <em><strong>strategic patent portfolio development</strong> </em>that grows with your company.</p>
         <br>
-        <button><a class="button-contact" href="#form">Schedule a Consultation</a></button>
       </div>
     </div>
   </div>
@@ -196,134 +196,6 @@
         <span class="anchor" id="form"></span> <!-- this anchor is placed here so that the form is viewable correctly -->
       </div>
       <div class="box box-r">
-      </div>
-    </div>
-  </div>
-</div>
-
-<div id="contact"class="footer section-break">
-  <div class="container-custom">
-    <h4>Let's Connect!</h4>
-    <br>
-    <div class="grid-footer">
-      <div class="l-side">
-        <div class="contact-form">
-          <form action="/middleman_lumen_build/submit-form" method="POST">
-            <div class="upper">
-              <div class="form-group-narrow">
-                <label for="fname">FIRST NAME</label>
-                <input autocomplete="given-name" class="form__input" type="text" id="fname" name="firstname" placeholder="Your first name" required>
-              </div>
-              <div class="form-group-narrow">
-                <label for="lname">LAST NAME</label>
-                <input autocomplete="family-name" type="text" id="lname" name="lastname" placeholder="Your last name" required>
-              </div>
-              <div class="form-group-narrow">
-                <!-- company or affiliation -->
-                <label for="company">COMPANY</label>
-                <input autocomplete="organization" type="text" id="company" name="company" placeholder="Your company or affiliation" required>
-              </div>
-              <div class="form-group-narrow">
-                <!-- phone -->
-                <label for="phone">PHONE</label>
-                <input autocomplete="tel" type="tel" id="phone" name="phone" placeholder="(XXX) XXX-XXXX" required>
-              </div>
-              <div class="form-group-narrow">
-                <!-- email -- THIS TRIGGERS AN ERROR IN WIDTHS FOR MOBILE LAYOUT-->
-                <label for="email">EMAIL</label>
-                <input autocomplete="email" type="email" id="email" name="email" placeholder="Your email address" required>
-              </div>
-              <div class="form-group-narrow">
-                <!-- how did you hear about us? -->
-                <label for="referral">HOW DID YOU HEAR ABOUT US?</label>
-                <select id="referral" name="referral">
-                  <option value=""></option>
-                  <option value="search">Internet Search</option>
-                  <option value="friend">Friend/Colleague</option>
-                  <option value="social_media">Social Media</option>
-                  <option value="advertising">Advertising</option>
-                  <option value="other">Other</option>
-                </select>
-              </div>
-              <div class="form-group-narrow">
-                <!-- interest check box -->
-                <fieldset>
-                  <legend>SERVICE(S) OF INTEREST</legend>
-                  <div class="inline">
-                    <input type="checkbox" id="interest1" name="interest" value="patpros">
-                    <label for="interest1">Patent Prosecution</label>
-                  </div>
-                  <div class="inline">
-                    <input type="checkbox" id="interest2" name="interest" value="duedil">
-                    <label for="interest2">Due Diligence</label>
-                  </div>
-                  <div class="inline">
-                    <input type="checkbox" id="interest3" name="interest" value="iplit">
-                    <label for="interest3">IP Litigation Consulting</label>
-                  </div>
-                  <div class="inline">
-                    <input type="checkbox" id="interest4" name="interest" value="other">
-                    <label for="interest4">Other (Please explain in message)</label>
-                  </div>
-                </fieldset>
-              </div>
-              <div class="form-group-narrow">
-                <!-- Best time to reach -->
-                <fieldset>
-                  <legend>BEST TIME TO BE REACHED (PACIFIC TIME)</legend>
-                  <div class="inline">
-                    <input type="radio" id="timeBusiness" name="bestTime" value="evening">
-                    <label for="timeBusiness">Normal Business Hours</label>
-                  </div>
-                  <div class="inline">
-                    <input type="radio" id="timeMorning" name="bestTime" value="morning">
-                    <label for="timeMorning">Mornings</label>
-                  </div>
-                  <div class="inline">
-                    <input type="radio" id="timeAfternoon" name="bestTime" value="afternoon">
-                    <label for="timeAfternoon">Afternoons</label>
-                  </div>
-                  <div class="inline">
-                    <input type="radio" id="timeEvening" name="bestTime" value="evening">
-                    <label for="timeEvening">Evenings</label>
-                  </div>
-                </fieldset>
-              </div>
-            </div>
-            <div class="lower">
-              <div class="form-group-wide">
-                <div class="char-count-container">
-                  <!-- message area -->
-                  <label for="message">Please provide a brief message about your inquiry (DO NOT include confidential or sensitive information):</label>
-                  <textarea
-                    id="message"
-                    maxlength="200"
-                    rows="4"
-                    placeholder="Type here (200-character limit)" required></textarea>
-                  <!-- Clear button -- SHOULD REMOVE BEFORE PUBLISHING -->
-                  <div class="counter-display">
-                    <div><span id="char-counter">200</span> characters remaining</div>
-                    <button id="button-reset-form" class="button-w-icon" type="reset" value="Reset Form">
-                      <i class="fa-solid fa-trash-can fa-lg" style="color: #ffffff;"></i>Clear Form</button>
-                  </div>
-                </div>
-              </div>
-              <div class="form-group-wide">
-                <div class="inline agreement">
-                  <!-- checkbox for terms and conditions -->
-                  <input type="checkbox" id="agree" name="agree" maxlength="10" required>
-                  <label for="agree">
-                    I accept the terms of the <strong>Legal Disclaimer</strong> and the <strong>Privacy Notice</strong>.
-                  </label>
-                </div>
-              </div>
-              <div class="form-group-wide">
-                <button id="button-submit-form"class="button-w-icon" type="submit">
-                  <i class="fa-solid fa-paper-plane fa-lg" style="color: #ffffff;"></i>Send Message</button>
-              </div>
-            </div>
-          </form>
-        </div>
       </div>
     </div>
   </div>

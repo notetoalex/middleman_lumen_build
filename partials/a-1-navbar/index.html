@@ -9,6 +9,8 @@
     <title>Lumen IP Law</title>
     <link href="/stylesheets/site.css" rel="stylesheet" />
     <script src="/javascripts/site.js"></script>
+    <!-- favicon -->
+    <link rel="icon" type="image/svg" href="/images/Lumen_RedIcon.svg">
     <!-- For Font Awesome css -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" />
     <!-- For Google Fonts -->
@@ -21,9 +23,9 @@
     <!-- disable iOS phone number detection and changing font color -->
     <!-- <meta name="format-detection" content="telephone=no"> -->
     <script>
-      // document.addEventListener('contextmenu',function(e){e.preventDefault();e.stopPropagation();});
-      // document.addEventListener('copy',function(e){e.preventDefault();e.stopPropagation();});
-      // document.addEventListener('cut',function(e){e.preventDefault();e.stopPropagation();});
+      document.addEventListener('contextmenu',function(e){e.preventDefault();e.stopPropagation();});
+      document.addEventListener('copy',function(e){e.preventDefault();e.stopPropagation();});
+      document.addEventListener('cut',function(e){e.preventDefault();e.stopPropagation();});
     </script>
   </head>
   <body>
@@ -33,18 +35,17 @@
       <a class="navbar-brand-link" href="/">
         <img class="navbar-brand" src="/images/Lumen_RedLogo.svg" alt="">
       </a>
-      <button id="open-sidebar-button" onclick="openSidebar()" aria-label="Open sidebar" aria-expanded="false" aria-controls="navbar"><img class="icon-xl" src="/images/bars-solid-full.svg" alt="">
+      <button id="open-sidebar-button" onclick="openSidebar()" aria-label="Open sidebar" aria-expanded="false" aria-controls="navbar"><i class="fa-solid fa-bars fa-xl" style="color: #000000;"></i>
       </button>
       <nav id="sidebar-menu">
         <ul>
           <li class="justify-end"><button id="close-sidebar-button" onclick="closeSidebar()" aria-label="Close sidebar">
-              <!-- <img class="icon-lg" src="images/xmark-solid-full-black.svg" alt=""> -->
-              <i class="fa-solid fa-xmark fa-lg" style="color: #ffffff;"></i>
+              <i class="fa-solid fa-xmark fa-xl" style="color: #ffffff;"></i>
             </button></li>
           <li class="justify-left"><a class="button-nav" href="/">Home</a></li>
           <li class="justify-left"><a class="button-nav" href="/services">Services</a></li>
           <li class="justify-left"><a class="button-nav" href="/about">About</a></li>
-          <li class="justify-center"><button><a class="button-contact" href="/#form">Contact</a></button></li>
+          <li class="justify-center"><button><a class="button-contact" href="/#ft">Contact</a></button></li>
         </ul>
       </nav>
     </div>
