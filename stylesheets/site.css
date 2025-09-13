@@ -755,7 +755,7 @@ Make all .box-card columns equal width and height
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  pointer-events: none;
+  /* pointer-events: none; */
   -webkit-user-drag: none;
   /* For Chrome, Safari, Opera */
   -moz-user-drag: none;
